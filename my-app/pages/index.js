@@ -47,7 +47,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<LazyLoadImage effect="blur" className={styles.banner1} src="../images/banner2.jpg" />
+				<LazyLoadImage effect="blur" className={styles.banner1} src="../images/banner2.jpg" placeholderSrc={"../images/banner2_pre.jpg"}/>
 
         <Feature/>
         <Review/>
