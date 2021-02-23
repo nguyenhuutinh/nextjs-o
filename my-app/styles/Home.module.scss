@@ -1,0 +1,481 @@
+@font-face {
+  font-weight: normal;
+  font-family: 'SVN-LarchShaded';
+  font-style: normal;
+  src: 
+    url('/fonts/SVN-LarchShaded.ttf') format('truetype'),
+ 
+}
+@font-face {
+  font-weight: normal;
+  font-family: 'UTMGodsWord';
+  font-style: normal;
+  src: url('/fonts/UTMGodsWord.ttf') format('truetype'),
+}
+@font-face {
+  font-weight: normal;
+  font-family: 'VLALEXONBOLD-ROMAN';
+  font-style: normal;
+  src: url('/fonts/VLALEXONBOLD-ROMAN.otf') format('truetype'),
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 5rem;
+  // background-color: #0070f3;
+  background: #fefdfb;
+  box-shadow: 0 2px hsl(0deg 0% 95% / 62%);
+  .left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+      height: 48px;
+    }
+    .slogan{
+      margin-left: 30px;
+      font-family: "SVN-LarchShaded";
+      color: #185c2b;
+      font-size: 22px;
+    }
+  }
+  .right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .link_item{
+      transition: all .3s;
+      padding-right: 20px;
+      &:hover{
+        color: #185c2b;
+        // background: rgba(0,0,0,.025);
+        
+      }
+      height: 100%;
+    }
+  }
+}
+
+.container {
+  min-height: 100vh;
+  padding: 0 0rem;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.main {
+  width: 100%;
+  padding: 0.5rem 0rem;
+  // flex: 1;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+}
+.banner1{
+  width: 100%;
+}
+
+
+.introvideo{
+ 
+  .buttonpart{
+    text-align: center;
+    width: 100%;
+    .button{
+      width: 500px;
+    }
+  }
+  background-color: #fef8d6;
+  padding: 2rem;
+  
+  .videopart{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #f0f9e8;
+    .left{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      .video_logo{
+        
+        width: 50%;
+      }
+      .text1{
+        font-family: "UTMGodsWord";
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #185c2b;
+      }
+      .text2{
+        font-family: "VLALEXONBOLD-ROMAN";
+        font-size: 70px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #185c2b;
+      }
+    }
+  
+    .right{
+      height: 100%;
+      width: 60%;
+  
+    }
+  }
+}
+
+.feature{
+  padding: 0 0.5rem;
+  .title{
+    font-family: "SVN-LarchShaded";
+    font-size: 60px;
+    text-align: center;
+    color: #185c2b;
+    padding: 50px;
+  }
+}
+.highlight_main{
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.highlight_card{
+  background: #fbffde;
+  margin: 0 0.5rem;
+  
+  width: 100%;
+  .title{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 20px;
+    .title1{
+      font-size: 24px;
+      color: white;
+      margin: 0px;
+      font-family: "UTMGodsWord";
+    }
+    .title2{
+      font-size: 35px;
+      color: white;
+      margin: 0px;
+      font-family: "UTMGodsWord";
+    }
+  }
+  .description{
+    padding: 20px 0;
+    .desc_item{
+      text-align: left;
+      padding: 4px 10px;
+      line-height: 20px;
+      .dot{
+        position: relative;
+        top: -1px;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        vertical-align: middle;
+        border-radius: 50%;
+        background: #3f901e;
+      }
+      .desc_title{
+        margin-left: 20px;
+        font-size: 17px;
+        color: black;
+      }
+    }
+  }
+  &:hover{
+    z-index: 1;
+    transform: translate3d(0,-8px,0);
+    transition: transform .3s ease;
+    box-shadow: 10px 10px 55px -4px rgb(0 0 0 / 41%);
+  }
+}
+.review{
+  text-align: center;
+  .title{
+    font-family: "UTMGodsWord";
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #185c2b;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .rating{
+    text-align: center;
+    font-size: 40px;
+  }
+  .review_main{
+    .review_item{
+      min-height: 350px;
+      background: #fbffde;
+  
+      display: flex;
+      flex-direction: column;
+      .review_header{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        .avatar{
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+        }
+        .review_info{
+          margin-left: 30px;
+          text-align: left;
+          >h3{
+            font-size: 28px;
+            font-family: "UTMGodsWord";
+            color: #185c2b;
+            text-transform: uppercase;
+            margin-bottom: 0;
+          }
+          >h5{
+            color: #8b8b8b;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 10px;
+          }
+        }
+        
+      }
+      .desc{
+        padding: 20px;
+        padding-bottom: 60px;
+        font-weight: 600;
+        color: #535353;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+
+
+.products{
+  background-color: #ededed;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  .title{
+    font-family: "SVN-LarchShaded";
+    font-size: 60px;
+    text-align: center;
+    color: #185c2b;
+    padding: 50px;
+  }
+  .products_main{
+    display: flex;
+    justify-content: space-around;
+    .product_card{
+      margin: 10px;
+      background-color: white;
+      text-align: center;
+      // background: #fbffde;
+      margin: 0 0.5rem;
+      width: 100%;
+      padding-top: 20px;
+      .product_image{
+        border-radius: 50%;
+        width: 80%;
+        border-color: #3f901e;
+        border-width: 1px;
+        border-style: outset;
+      }
+      .title1{
+        font-style: italic;
+        color: #185c2b;
+        font-size: 20px;
+        font-family:  Helvetica, sans-serif;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+      .title2{
+        margin-top: 0px;
+        font-size: 35px;
+        font-family: "UTMGodsWord";
+        color: #185c2b;
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+
+      cursor: pointer;
+      &:hover{
+        z-index: 1;
+        transform: translate3d(0,-8px,0);
+        transition: transform .3s ease;
+        box-shadow: 10px 10px 55px -4px rgb(0 0 0 / 41%);
+      }
+    }
+  }
+}
+.button_tu_van{
+  text-align: center;
+  margin: 0 auto;
+  background-color: #185c2b;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 22px;
+  border-radius: 25px;
+  border-color: #185c2b;
+  width: 300px;
+  cursor: pointer;
+  &:hover{
+    background-color: #04c23a;
+    border-color: #04c23a;
+    color: white;
+
+  }
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+}
+
+
+.promotion{
+  background-color: #185c2b;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+ 
+  .left{
+    width: 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    .promotion_title{
+      font-family: "SVN-LarchShaded";
+      
+      text-align: center;
+      color: #185c2b;
+      >h3{
+        font-size: 4rem;
+        line-height: 20px;
+        margin-bottom: 0px;
+      }
+      >h5{
+        font-size: 2.5rem;
+        margin-top: 15px;
+       
+      }
+    }
+    .promotion_button{
+      text-align: center;
+      margin: 0 auto;
+      background-color: #185c2b;
+      color: white;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 22px;
+      border-radius: 25px;
+      border-color: #185c2b;
+      width: 300px;
+      margin-bottom: 30px;
+      cursor: pointer;
+      &:hover{
+        background-color: #04c23a;
+        border-color: #04c23a;
+        color: white;
+    
+      }
+      text-transform: uppercase;
+      font-family: Helvetica, sans-serif;
+    }
+    .promotion_hint{
+      font-size: 22px;
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 30px;
+    }
+  }
+  .right{
+    .image_promotion{
+      width: 100%;
+      height: auto;
+    }
+    height: 100%;
+    width: 55%;
+  }
+  
+}
+
+.promotion7days{
+  .videopart2{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #f0f9e8;
+    .left{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      .video_logo{
+        
+        width: 50%;
+      }
+      .text1{
+        font-family: "UTMGodsWord";
+        font-size: 2rem;
+        text-transform: capitalize;
+        color: #185c2b;
+      }
+      .text2{
+        font-family: "UTMGodsWord";
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #185c2b;
+      }
+      .text3{
+        font-family: "UTMGodsWord";
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #185c2b;
+      }
+    }
+  
+    .right{
+      height: 100%;
+      width: 50%;
+  
+    }
+  }
+  .buttonpart{
+    text-align: center;
+    width: 100%;
+    padding: 50px;
+    .button{
+      width: 500px;
+    }
+  }
+}
