@@ -25,7 +25,7 @@ const Promotion = () => {
 					<p  className={classes.promotion_hint}>Được Các Chuyên Viên Dinh Dưỡng tư vấn và theo dõi tận tình trong suốt liệu trình giảm cân</p>
 			</div>
 			<div className={classes.right} >
-			<LazyLoadImage className={classes.image_promotion} src="../images/goidinhky_1.jpg" />
+			<LazyLoadImage className={classes.image_promotion} src="../images/goidinhky_1.jpg" placeholderSrc={"../images/goidinhky_1_pre.jpg"}/>
 			</div>
 		</div>
 	);
