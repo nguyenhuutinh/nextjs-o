@@ -18,13 +18,26 @@
   font-style: normal;
   src: url('/fonts/VLALEXONBOLD-ROMAN.otf') format('truetype'),
 }
-
+.topbar{
+  height: 25px;
+  background-color: #67b868;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  >div{
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
 .header{
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  padding: 0 5rem;
+  padding: 0rem 5rem;
+  margin-top: 4px;
   // background-color: #0070f3;
   background: #fefdfb;
   box-shadow: 0 2px hsl(0deg 0% 95% / 62%);
@@ -72,7 +85,7 @@
 
 .main {
   width: 100%;
-  padding: 0.5rem 0rem;
+  padding: 0rem 0rem;
   // flex: 1;
   // display: flex;
   // flex-direction: column;
@@ -424,6 +437,7 @@
     .image_promotion{
       width: 100%;
       height: auto;
+      min-height: 80vh;
     }
     height: 100%;
     width: 55%;
