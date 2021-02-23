@@ -19,7 +19,7 @@ const Promotion7Days = () => {
 								width="100%"
 								height={typeof window !== 'undefined' ? window.innerHeight / 3 * 2 : "500px"}
 								src="https://www.youtube.com/embed/_GYDGjLBmfg"
-								frameborder="0"
+								frameBorder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 								allowfullscreen
 							/>

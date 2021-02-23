@@ -19,7 +19,7 @@ export default function Home() {
 
 			<main className={styles.main}>
 				<Header />
-				<LazyLoadImage effect="blur" className={styles.banner1} src="../images/banner1.jpg" />
+				<LazyLoadImage effect="blur" className={styles.banner1} src="../images/banner1.jpg" placeholderSrc={"../images/banner1_pre.jpg"}/>
 				<div className={styles.introvideo}>
 					<div className={styles.buttonpart}>
 						<a href="#">
@@ -40,7 +40,7 @@ export default function Home() {
 								width="100%"
 								height={typeof window !== 'undefined' ? window.innerHeight / 3 * 2 : "500px"}
 								src="https://www.youtube.com/embed/Kz76S_h-76Y"
-								frameborder="0"
+								frameBorder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 								allowfullscreen
 							/>
