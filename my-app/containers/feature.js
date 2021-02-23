@@ -48,8 +48,9 @@ const Feature = () => {
 						title: 'Giao hàng',
 						title2: 'Tận Nơi',
                         description1: "Thực phẩm tươi được chế biến mỗi ngày",
-                        description2: "Lựa chọn sử dụng các loại rau, củ quả tốt nhất cho sức khoẻ như: Cần tây, bó xôi, táo, lê…",
-                        description3: "Giao hàng tận nơi",
+                        
+                        description2: "Giao hàng tận nơi",
+						description3: "Ưu đãi phí ship khi sử dụng gói định kỳ",
 					}}
 				/>
 
