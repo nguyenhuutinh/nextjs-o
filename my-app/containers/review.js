@@ -71,7 +71,7 @@ const Review = () => {
 					slidesToShow={3}
 					className={classes.carousel}
 					cellSpacing={20}
-					framePadding="100px"
+					framePadding={30}
 					autoplay={true}
 					autoplayInterval={3500}
 					pauseOnHover={true}

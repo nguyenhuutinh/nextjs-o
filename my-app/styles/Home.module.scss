@@ -136,7 +136,7 @@
       }
       .text1{
         font-family: "UTMGodsWord";
-        font-size: 25px;
+        font-size: 1.5rem;
         text-transform: uppercase;
         color: #185c2b;
       }
@@ -146,6 +146,7 @@
         font-weight: 600;
         text-transform: uppercase;
         color: #185c2b;
+        letter-spacing: 6px;
       }
     }
   
@@ -243,7 +244,7 @@
   }
   .review_main{
     .review_item{
-      min-height: 350px;
+      min-height: 450px;
       background: #fbffde;
   
       display: flex;
@@ -256,12 +257,21 @@
           border-radius: 50%;
           width: 150px;
           height: 150px;
+          @media only screen and (max-width: 1200px) {
+            width: 120px;
+            height: 120px;
+
+          }
         }
         .review_info{
           margin-left: 30px;
+          @media only screen and (max-width: 1200px) {
+            margin-left: 15px;
+
+          }
           text-align: left;
           >h3{
-            font-size: 28px;
+            font-size: 1.5rem;
             font-family: "UTMGodsWord";
             color: #185c2b;
             text-transform: uppercase;
@@ -297,7 +307,7 @@
   padding-bottom: 5%;
   .title{
     font-family: "SVN-LarchShaded";
-    font-size: 60px;
+    font-size: 3.5rem;
     text-align: center;
     color: #185c2b;
     padding: 50px;
