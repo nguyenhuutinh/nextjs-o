@@ -16,7 +16,7 @@ const Header = () => {
             </div>
             <div className={classes.header}>
                 <div className={classes.left}>
-                    <LazyLoadImage effect="blur"   className={classes.logo} src="../images/greeno-logo.png" placeholderSrc={"../images/greeno-logo-pre.png"}/>
+                    <LazyLoadImage effect="blur"   className={classes.logo} src="../images/greeno-logo.png" />
                     <div className={classes.slogan}>
                     Thải Độc - Giảm Cân - Đẹp Da
                     </div>

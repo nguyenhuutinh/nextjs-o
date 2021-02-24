@@ -19,7 +19,7 @@ export default function Home() {
 
 			<main className={styles.main}>
 				<Header />
-				<LazyLoadImage effect="blur" className={styles.banner1} src="../images/banner1.jpg" placeholderSrc={"../images/banner1_pre.jpg"}/>
+				<LazyLoadImage  className={styles.banner1} src="../images/banner1.jpg" placeholderSrc={"../images/banner1_pre.jpg"}/>
 				<div className={styles.introvideo}>
 					<div className={styles.buttonpart}>
 						<a href="#">
