@@ -10,7 +10,7 @@ const Promotion7Days = () => {
 						<div className={styles.left} >
 			<div className={styles.text1}>Giải Pháp Hỗ Trợ Giảm Cân An Toàn </div>
               <br/>
-              <div className={styles.text2}>Chỉ Trong 7 Ngày</div>
+              <div className={styles.text2}>Trong 7 - 14 Ngày</div>
               <br/>
               <div className={styles.text3}>Cùng Green O</div>
             </div>

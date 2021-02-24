@@ -12,7 +12,7 @@ const Promotion = () => {
 					<h3>Ưu Đãi </h3>
 					<h5>Khi Sử dụng gói định kỳ</h5>
 				</div>
-				<div className={classes.promotion_button}>
+					<div className={classes.promotion_button}>
 						Giao Hàng Tận Nơi 
 					</div>
 					<div  className={classes.promotion_button}>
@@ -21,7 +21,7 @@ const Promotion = () => {
 					<div  className={classes.promotion_button}>
 						Ưu Đãi Về Giá
 					</div>
-					<br/>
+					
 					<p  className={classes.promotion_hint}>Được Các Chuyên Viên Dinh Dưỡng tư vấn và theo dõi tận tình trong suốt liệu trình giảm cân</p>
 			</div>
 			<div className={classes.right} >

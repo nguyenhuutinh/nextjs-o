@@ -77,7 +77,7 @@ const Review = () => {
 					pauseOnHover={true}
 					lazyLoad="progressive"
 					// heightMode="max"
-					initialSlideHeight={800}
+					initialSlideHeight={600}
 					// renderCenterLeftControls={({ previousSlide }) => (
 					//   <div className={styles.buttonControl}><button  onClick={previousSlide}><Icon type="left" /></button></div>
 					// )}

@@ -139,6 +139,9 @@
         font-size: 1.5rem;
         text-transform: uppercase;
         color: #185c2b;
+        @media only screen and (max-width: 1400px) {
+          font-size: 1.2rem;
+        }
       }
       .text2{
         font-family: "VLALEXONBOLD-ROMAN";
@@ -162,10 +165,13 @@
   padding: 0 0.5rem;
   .title{
     font-family: "SVN-LarchShaded";
-    font-size: 60px;
+    font-size: 4rem;
     text-align: center;
     color: #185c2b;
     padding: 50px;
+    @media only screen and (max-width: 1400px) {
+      font-size: 3rem;
+    }
   }
 }
 .highlight_main{
@@ -185,14 +191,23 @@
     background-size: cover;
     width: 100%;
     padding: 20px;
+    @media only screen and (max-width: 1400px) {
+      padding: 10px;
+    }
     .title1{
       font-size: 24px;
+      @media only screen and (max-width: 1400px) {
+        font-size: 18px;
+      }
       color: white;
       margin: 0px;
       font-family: "UTMGodsWord";
     }
     .title2{
       font-size: 35px;
+      @media only screen and (max-width: 1400px) {
+        font-size: 26px;
+      }
       color: white;
       margin: 0px;
       font-family: "UTMGodsWord";
@@ -217,6 +232,9 @@
       .desc_title{
         margin-left: 10px;
         font-size: 17px;
+        @media only screen and (max-width: 1400px) {
+          font-size: 14px;
+        }
         color: black;
       }
     }
@@ -233,18 +251,24 @@
   .title{
     font-family: "UTMGodsWord";
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 2.8rem;
     color: #185c2b;
     text-align: center;
     padding-top: 100px;
+    @media only screen and (max-width: 1400px) {
+      font-size: 2.2rem;
+    }
   }
   .rating{
     text-align: center;
     font-size: 40px;
+    @media only screen and (max-width: 1400px) {
+      font-size: 35px;
+    }
   }
   .review_main{
     .review_item{
-      min-height: 450px;
+      min-height: 60vh;
       background: #fbffde;
   
       display: flex;
@@ -257,7 +281,7 @@
           border-radius: 50%;
           width: 150px;
           height: 150px;
-          @media only screen and (max-width: 1200px) {
+          @media only screen and (max-width: 1400px) {
             width: 120px;
             height: 120px;
 
@@ -265,7 +289,7 @@
         }
         .review_info{
           margin-left: 30px;
-          @media only screen and (max-width: 1200px) {
+          @media only screen and (max-width: 1400px) {
             margin-left: 15px;
 
           }
@@ -292,6 +316,12 @@
         font-weight: 600;
         color: #535353;
         line-height: 30px;
+        font-size: 16px;
+        text-align: left;
+        @media only screen and (max-width: 1400px) {
+          font-size: 14px;
+
+        }
       }
     }
   }
@@ -311,6 +341,9 @@
     text-align: center;
     color: #185c2b;
     padding: 50px;
+    @media only screen and (max-width: 1400px) {
+      font-size: 3rem;
+    }
   }
   .products_main{
     display: flex;
@@ -321,11 +354,17 @@
       text-align: center;
       // background: #fbffde;
       margin: 0 0.5rem;
-      width: 100%;
+      // @media only screen and (max-width: 1400px) {
+      //   margin: 0 0.5rem;
+      // }
+      width: 80%;
       padding-top: 20px;
       .product_image{
         border-radius: 50%;
         width: 80%;
+        @media only screen and (max-width: 1400px) {
+          width: 60%;
+        }
         border-color: #3f901e;
         border-width: 1px;
         border-style: outset;
@@ -334,14 +373,22 @@
         font-style: italic;
         color: #185c2b;
         font-size: 20px;
+        margin-top: 10px;
+        @media only screen and (max-width: 1400px) {
+          font-size: 16px;
+          margin-top: 0px;
+        }
         font-family:  Helvetica, sans-serif;
         font-weight: 400;
-        margin-top: 10px;
+       
         margin-bottom: 0px;
       }
       .title2{
         margin-top: 0px;
         font-size: 35px;
+        @media only screen and (max-width: 1400px) {
+          font-size: 26px;
+        }
         font-family: "UTMGodsWord";
         color: #185c2b;
         text-transform: uppercase;
@@ -359,8 +406,10 @@
   }
 }
 .button_tu_van{
+ 
   text-align: center;
   margin: 0 auto;
+  
   background-color: #185c2b;
   color: white;
   padding-left: 30px;
@@ -378,8 +427,13 @@
     color: white;
 
   }
+  margin-top: 20px;
   text-transform: uppercase;
   font-family: Helvetica, sans-serif;
+  @media only screen and (max-width: 1400px) {
+    font-size: 18px;
+    
+  }
 }
 .quiz{
   background-image: url('/images/tuvan.jpg');
@@ -462,11 +516,18 @@
         font-size: 4rem;
         line-height: 20px;
         margin-bottom: 0px;
+        @media only screen and (max-width: 1400px) {
+          font-size: 2.5rem;
+          
+        }
       }
       >h5{
         font-size: 2.5rem;
         margin-top: 15px;
-       
+        @media only screen and (max-width: 1400px) {
+          font-size: 2rem;
+          
+        }
       }
     }
     .promotion_button{
@@ -479,6 +540,10 @@
       padding-top: 10px;
       padding-bottom: 10px;
       font-size: 22px;
+      @media only screen and (max-width: 1400px) {
+        font-size: 18px;
+        
+      }
       border-radius: 25px;
       border-color: #185c2b;
       width: 300px;
@@ -499,6 +564,12 @@
       text-align: center;
       margin: 0 auto;
       line-height: 30px;
+      @media only screen and (max-width: 1400px) {
+        font-size: 18px;
+        line-height: 22px;
+        width: 70%;
+        
+      }
     }
   }
   .right{
