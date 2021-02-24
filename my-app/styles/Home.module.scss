@@ -110,6 +110,9 @@
     width: 100%;
     .button{
       width: 500px;
+      @media only screen and (max-width: 1400px) {
+        width: 400px;
+      }
     }
   }
   background-color: #fef8d6;
@@ -639,6 +642,9 @@
     padding: 50px;
     .button{
       width: 500px;
+      @media only screen and (max-width: 1400px) {
+        width: 400px;
+      }
     }
   }
 }
