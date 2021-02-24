@@ -16,3 +16,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.ant-form label{
+  font-size: 17px !important;
+} 
+.ant-radio-wrapper{
+  white-space: pre-wrap;
+}

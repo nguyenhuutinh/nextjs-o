@@ -2,7 +2,7 @@ import React, { Component, useState, useRef, useEffect } from 'react';
 import styles from '../styles/Home.module.scss';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-const Promotion7Days = () => {
+const Promotion7Days = ({callback}) => {
 	
 	return (
 		<div className={styles.promotion7days}>
@@ -21,13 +21,13 @@ const Promotion7Days = () => {
 								src="https://www.youtube.com/embed/_GYDGjLBmfg"
 								frameBorder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen
+								allowFullScreen
 							/>
 						</div>
 					</div>
 
 					<div className={styles.buttonpart}>
-						<a href="#">
+						<a onClick={()=>callback(true)}>
 							<LazyLoadImage effect="blur" className={styles.button} src="../images/button-1.png" />
 						</a>
 					</div>	

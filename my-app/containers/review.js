@@ -2,7 +2,6 @@ import React, { Component, useState, useRef, useEffect } from 'react';
 import classes from '../styles/Home.module.scss';
 import Carousel from 'nuka-carousel';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import Rating from '@material-ui/lab/Rating';
 const feedback = [
 	{
 		img: '../images/kh1.jpg',
@@ -60,18 +59,18 @@ const Review = () => {
 				Khách Hàng Nói Gì Về Green O
 				
 			</div>
-			<Rating
+			{/* <Rating
 																	value={5}
 																	readOnly
 																	className={classes.rating}
-																/>
+																/> */}
 			<div className={classes.review_main}>
 				<Carousel
 					ref={carousel}
 					slidesToShow={3}
 					className={classes.carousel}
 					cellSpacing={20}
-					framePadding={30}
+					framePadding={"30px"}
 					autoplay={true}
 					autoplayInterval={3500}
 					pauseOnHover={true}

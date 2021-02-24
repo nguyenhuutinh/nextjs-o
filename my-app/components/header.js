@@ -1,5 +1,6 @@
 import React, { Component, useState, useEffect } from 'react';
 import classes from '../styles/Home.module.scss'
+import Link from 'next/link'
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 const Header = () => {
@@ -16,7 +17,7 @@ const Header = () => {
             </div>
             <div className={classes.header}>
                 <div className={classes.left}>
-                    <LazyLoadImage effect="blur"   className={classes.logo} src="../images/greeno-logo.png" />
+                    <Link href="/" style={{cursor:"pointers"}}><LazyLoadImage effect="blur"   className={classes.logo} src="../images/greeno-logo.png" /></Link>
                     <div className={classes.slogan}>
                     Thải Độc - Giảm Cân - Đẹp Da
                     </div>

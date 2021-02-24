@@ -13,7 +13,7 @@ const Product = ({data}) => {
                 <h5 className={classes.title1}>{data.title} </h5>
                 <h3 className={classes.title2}>{data.title2} </h3>
                
-                <div className={classes.button_tu_van}>Tư vấn miễn phí</div>
+                <div className={classes.button_tu_van} onClick={()=>{data.onShowPopup(data.pos)}}>Tư vấn miễn phí</div>
             </div>
             
 		</div>

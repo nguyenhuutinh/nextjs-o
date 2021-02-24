@@ -9,7 +9,14 @@ import Quiz from '../containers/quiz';
 import Products from '../containers/products';
 import Promotion from '../containers/promotion';
 import Promotion7Days from '../containers/promotion7days';
+import {Modal} from 'antd'
+import { Button } from 'antd';
+import RegisterForm from '../components/RegisterForm';
+import { useState } from 'react';
+
 export default function Home() {
+	const [visible, setVisisble] = useState(false)
+	const [pos, setPos] = useState(0)
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -22,7 +29,7 @@ export default function Home() {
 				<LazyLoadImage  className={styles.banner1} src="../images/banner1.jpg" placeholderSrc={"../images/banner1_pre.jpg"}/>
 				<div className={styles.introvideo}>
 					<div className={styles.buttonpart}>
-						<a href="#">
+						<a onClick={()=>setVisisble(true)}>
 							<LazyLoadImage effect="blur" className={styles.button} src="../images/button-1.png" />
 						</a>
 					</div>
@@ -42,7 +49,7 @@ export default function Home() {
 								src="https://www.youtube.com/embed/Kz76S_h-76Y"
 								frameBorder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen
+								allowFullScreen
 							/>
 						</div>
 					</div>
@@ -51,10 +58,28 @@ export default function Home() {
 
         <Feature/>
         <Review/>
-        <Quiz/>
-        <Products/>
+        <Quiz setPos={(pos)=>setPos(pos)} showForm={()=>{setVisisble(true)}}/>
+        <Products onShowForm={(pos)=>{setPos(pos); setVisisble(true)}}/>
         <Promotion/>
-        <Promotion7Days/>
+        <Promotion7Days callback={(bool)=>setVisisble(bool)}/>
+		<Modal
+				visible={visible}
+				width={'45%'}
+				// onOk={()=>{}}
+				onCancel={() => {
+					setVisisble(false)
+				}}
+				footer={null}
+				destroyOnClose
+			>
+				<RegisterForm
+				pos={pos}
+					onCancel={() => {
+						setVisisble(false)
+					}}
+				/>
+			</Modal>
+		<Button type="primary">aaaaa</Button>
 			</main>
 
 			<footer className={styles.footer}>

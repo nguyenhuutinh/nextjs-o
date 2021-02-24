@@ -272,6 +272,9 @@
   .review_main{
     .review_item{
       min-height: 60vh;
+      @media only screen and (min-width: 1400px) {
+        min-height: 45vh;
+      }
       background: #fbffde;
   
       display: flex;
@@ -299,6 +302,9 @@
           text-align: left;
           >h3{
             font-size: 1.5rem;
+            @media only screen and (min-width: 1400px) {
+              font-size: 2rem;
+            }
             font-family: "UTMGodsWord";
             color: #185c2b;
             text-transform: uppercase;
@@ -468,6 +474,7 @@
       font-family: "UTMGodsWord";
       text-transform: uppercase;
     }
+    
     .quiz_button{
       text-align: center;
       margin: 0 auto;
@@ -498,7 +505,11 @@
       text-transform: uppercase;
       font-family: Helvetica, sans-serif;
     }
-
+    .quiz_active{
+      background-color: #04c23a;
+      border-color: #04c23a;
+      color: white;
+    }
     .bottom{
       margin-top: 60px;
       border-bottom-left-radius: 10px;
@@ -531,12 +542,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .promotion_title{
       font-family: "SVN-LarchShaded";
       
       text-align: center;
       color: #185c2b;
       >h3{
+        color: #185c2b;
         font-size: 4rem;
         line-height: 20px;
         margin-bottom: 0px;
@@ -546,6 +562,7 @@
         }
       }
       >h5{
+        color: #185c2b;
         font-size: 2.5rem;
         margin-top: 15px;
         @media only screen and (max-width: 1400px) {
