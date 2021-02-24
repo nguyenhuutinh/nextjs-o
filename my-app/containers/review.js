@@ -2,6 +2,7 @@ import React, { Component, useState, useRef, useEffect } from 'react';
 import classes from '../styles/Home.module.scss';
 import Carousel from 'nuka-carousel';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Rate } from 'antd';
 const feedback = [
 	{
 		img: '../images/kh1.jpg',
@@ -59,11 +60,11 @@ const Review = () => {
 				Khách Hàng Nói Gì Về Green O
 				
 			</div>
-			{/* <Rating
-																	value={5}
-																	readOnly
+			<Rate
+																	defaultValue={5}
+																	disabled
 																	className={classes.rating}
-																/> */}
+																/>
 			<div className={classes.review_main}>
 				<Carousel
 					ref={carousel}

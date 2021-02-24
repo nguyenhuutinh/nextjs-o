@@ -70,7 +70,7 @@ const RegisterForm = ({onCancel, pos}) => {
 				Hotline: 1900 63 67 91
 			</div>
 			<Card bordered={false} style={{ display: sent ? 'none' : '' }}>
-				<Form ref={form} layout="vertical" onFinish={handleSubmit} style={{ marginTop: 8, margin: '0' }} initialValues={{question: pos==3 ? "Tăng sức đề kháng - đẹp da" : pos == 2 ? "Giảm 3-5kg, siết 5-10cm": pos == 1 ? "Giảm 2-3kg, siết 5-7cm":"Giảm 1-2kg, siết 2-3cm"}}>
+				<Form requiredMark={false} ref={form} layout="vertical" onFinish={handleSubmit} style={{ marginTop: 8, margin: '0' }} initialValues={{question: pos==3 ? "Tăng sức đề kháng - đẹp da" : pos == 2 ? "Giảm 3-5kg, siết 5-10cm": pos == 1 ? "Giảm 2-3kg, siết 5-7cm":"Giảm 1-2kg, siết 2-3cm"}}>
 					<FormItem
             name="question"
 						className={styles.register_question}
