@@ -10,7 +10,7 @@ const feedback = [
 		name: 'Chị My',
 		yold: '25 Tuổi',
 		desc:
-			'Em giảm được 11kg và 8cm vùng bụng sau 4 liệu trình. 1 pha bức phá trước cưới, cơ thể nhẹ nhàng và làn da căng mơn mỡn hơn. thanks Green O '
+			'Em giảm được 11kg và 8cm vùng bụng sau 4 liệu trình. 1 pha bức phá trước cưới, cơ thể nhẹ nhàng và làn da căng mơn mởn hơn. Thanks Green O '
 	},
 	{
 		img: '../images/kh2.jpg',
@@ -35,14 +35,14 @@ const feedback = [
 		img: '../images/kh5.jpg',
 		name: 'Chị Hạnh',
 		yold: '26 tuổi',
-		desc: 'Mỗi lần uống liệu trinh Detox là chị thích nhất chai Vẻ đẹp tỏa sáng này, Ngon, thơm lại tốt cho da nữa.'
+		desc: 'Mỗi lần uống liệu trình Detox là chị thích nhất chai Vẻ đẹp tỏa sáng này. Ngon, thơm lại tốt cho da nữa.'
 	},
 	{
 		img: '../images/kh6.jpg',
 		name: 'Chị Tiên',
 		yold: '29 tuổi',
 		desc:
-			'Chị thích nhất chai sữa hạt Protein tốt lắm trong chu trình. Uống ngon, thơm bùi, lại tốt cho sức khỏe.Mình thấy da dẻ được cải thiện, tiêu hóa đều đặn hơn rất nhiều.'
+			'Chị thích nhất chai sữa hạt Protein Tốt Lắm trong liệu trình. Uống ngon, thơm bùi, lại tốt cho sức khỏe. Mình thấy da dẻ được cải thiện, tiêu hóa đều đặn hơn rất nhiều.'
 	}
 	// {img: kh1, name:'Ms THANH HOA', desc: 'Hôm nay bạn đã uống Green O - Sinh tố rau sạch chưa? #Green_O #Sinh_tố_rau_sạch'},
 ];

@@ -8,6 +8,15 @@
 }
 @font-face {
   font-weight: normal;
+  font-family: 'TUV-Domaine-Regular';
+  font-style: normal;
+  src: 
+    url('/fonts/TUV-Domaine-Regular.ttf') format('truetype'),
+ 
+}
+
+@font-face {
+  font-weight: normal;
   font-family: 'UTMGodsWord';
   font-style: normal;
   src: url('/fonts/UTMGodsWord.ttf') format('truetype'),
@@ -345,10 +354,11 @@
       .desc{
         padding: 20px;
         padding-bottom: 60px;
-        font-weight: 700;
+        font-weight: 600;
         color: #535353;
+        font-family: "TUV-Domaine-Regular";
         line-height: 30px;
-        font-size: 16px;
+        font-size: 18px;
         text-align: left;
         @media only screen and (max-width: 1400px) {
           font-size: 14px;
@@ -583,7 +593,7 @@
       }
       
       color: #185c2b;
-      font-family: "UTMGodsWord";
+      font-family: "TUV-Domaine-Regular";
       text-transform: uppercase;
     }
     .quiz_logo{
@@ -591,6 +601,7 @@
       width: 300px;
     }
     .quiz_button{
+      font-family: 'TUV-Domaine-Regular';
       text-align: center;
       margin: 0 auto;
       background-color: #185c2b;
@@ -619,8 +630,8 @@
     
       }
       
-      text-transform: uppercase;
-      font-family: Helvetica, sans-serif;
+      // text-transform: uppercase;
+      font-family: "TUV-Domaine-Regular", sans-serif;
     }
     .quiz_active{
       background-color: #04c23a;
@@ -635,7 +646,7 @@
       // border-style: solid;
       // border-width: 1px;
       width: 100%;
-      font-family: "UTMGodsWord";
+      font-family: "TUV-Domaine-Regular";
       color: white;
       border-color: #185c2b;
       &:hover{
