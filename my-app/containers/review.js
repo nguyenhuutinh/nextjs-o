@@ -9,13 +9,13 @@ const feedback = [
 		name: 'Chị My',
 		yold: '25 Tuổi',
 		desc:
-			'Em giảm được 11kg và 8cm vòng bụng sau 4 liệu trình. 1 pha bức phá trước cưới, cơ thể nhẹ nhàng và làn da căng mơn mỡn hơn. thanks Green O '
+			'Em giảm được 11kg và 8cm vùng bụng sau 4 liệu trình. 1 pha bức phá trước cưới, cơ thể nhẹ nhàng và làn da căng mơn mỡn hơn. thanks Green O '
 	},
 	{
 		img: '../images/kh2.jpg',
 		name: 'Chị Thảo',
 		yold: '24 tuổi',
-		desc: 'Sau khi dùng 3 liệu trình 14 ngày, chị xuống hẳn 12kg và 10cm vòng bụng.'
+		desc: 'Sau khi dùng 3 liệu trình 14 ngày, chị xuống hẳn 12kg và 10cm vùng bụng.'
 	},
 	{
 		img: '../images/kh3.jpg',
@@ -28,7 +28,7 @@ const feedback = [
 		img: '../images/kh4.jpg',
 		name: 'Chị Trúc',
 		yold: '28 tuổi',
-		desc: 'Sau khi dùng liệu trình 14 ngày, mình giảm được 4 kg và 3cm vòng bụng luôn. Da cũng bớt mụn và thâm hẳn'
+		desc: 'Sau khi dùng liệu trình 14 ngày, mình giảm được 4 kg và 3cm vùng bụng luôn. Da cũng bớt mụn và thâm hẳn'
 	},
 	{
 		img: '../images/kh5.jpg',
