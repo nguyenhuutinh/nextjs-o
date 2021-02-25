@@ -411,9 +411,9 @@
         position: relative;
         .product_image{
           border-radius: 50%;
-          width: 80%;
+          width: 75%;
           @media only screen and (max-width: 1400px) {
-            width: 80%;
+            width: 70%;
           }
           // border-color: #3f901e;
           // border-width: 1px;
@@ -488,7 +488,7 @@
         box-shadow: 10px 10px 55px -4px rgb(0 0 0 / 41%);
       }
       .price{
-        margin-top: 20px;
+        margin-top: 10px;
         color: #000;
         font-size: 18px;
         @media only screen and (max-width: 1400px) {
@@ -543,7 +543,7 @@
     color: #185c2b;
 
   }
-  margin-top: 20px;
+  margin-top: 10px;
   text-transform: uppercase;
   font-family:  sans-serif;
   @media only screen and (max-width: 1400px) {
