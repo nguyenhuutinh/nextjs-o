@@ -10,10 +10,11 @@ const { TextArea } = Input;
 
 const RegisterForm = ({onCancel, pos}) => {
 	const [ sent, setSent ] = useState(false);
-  const [ submiting, setSubmitting ] = useState(false);
+  
 	const form = useRef();
   const questionRef = useRef()
   const router = useRouter()
+  const [ submiting, setSubmitting ] = useState(false);
 
 	const sendData = (question, name, phone) => {
 		var xhr = new XMLHttpRequest();

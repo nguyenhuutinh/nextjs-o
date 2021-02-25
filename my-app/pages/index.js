@@ -18,7 +18,7 @@ export default function Home() {
 	const [ visible, setVisisble ] = useState(false);
 	const [ pos, setPos ] = useState(2);
 	var videoheight = typeof window !== 'undefined' ? `${window.innerHeight/3 * 2}px` : '500px'
-	console.log(videoheight)
+	
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -78,6 +78,7 @@ export default function Home() {
 					showForm={() => {
 						setVisisble(true);
 					}}
+					pos={pos}
 				/>
 				<Products
 					onShowForm={(pos) => {
@@ -122,6 +123,7 @@ export default function Home() {
 					Hotline: 1900 63 67 91 - 090909 60 60 - 090944 80 60<br />
 					Email: vietnam@thousandhands.com<br />
 				</div>
+				<div className={styles.separator}></div>
 				<div className={styles.trademak}>Copyright © 2021 Green O - Sinh Tố Rau Sạch. All Rights Reserved.</div>
 			</footer>
 		</div>
