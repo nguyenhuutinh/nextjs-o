@@ -38,7 +38,7 @@ const Products = ({onShowForm}) => {
 				
 				<Product
 					data={{
-						pos:3,
+						pos:2,
 						image: '../images/product_3.jpg',
 						title: 'giảm 3-5kg, siết 5-10cm vòng bụng với',
 						title2: 'Gói 14 Ngày - 4 Chai / 1 Ngày',
@@ -51,7 +51,7 @@ const Products = ({onShowForm}) => {
 				/>
 <Product
 					data={{
-						pos:4,
+						pos:3,
 						image: '../images/product_4.jpg',
 						title: 'tăng sức đề kháng - tươi sáng làn da với',
 						title2: 'Gói 14 Ngày - 2 Chai / 1 Ngày',
