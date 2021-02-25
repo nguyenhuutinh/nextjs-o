@@ -6,7 +6,9 @@ import Product from '../components/product';
 const Products = ({ onShowForm }) => {
 	return (
 		<div className={classes.products}>
-			<div className={classes.title}>Các Gói Giảm Cân An Toàn</div>
+			<div  className={classes.main_title}>
+				<div className={classes.products_title}>Các Gói Giảm Cân An Toàn</div>
+			</div>
 			<div className={classes.products_main}>
 				<Product
 					data={{

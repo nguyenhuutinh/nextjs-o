@@ -9,9 +9,9 @@ const Promotion7Days = ({callback}) => {
 			<div className={styles.videopart2}>
 						<div className={styles.left} >
 			<div className={styles.text1}>Giải Pháp Hỗ Trợ Giảm Cân An Toàn </div>
-              <br/>
+              
               <div className={styles.text2}>Từ 7 - 14 Ngày</div>
-              <br/>
+              <br/><br/>
               <div className={styles.text3}>Cùng Green O</div>
             </div>
 						<div className={styles.right}>

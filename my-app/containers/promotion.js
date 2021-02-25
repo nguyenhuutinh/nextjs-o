@@ -10,10 +10,10 @@ const Promotion = () => {
 			<div className={classes.left} style={{backgroundImage:"url(../images/goidinhky_2.jpg)"}}>
 				<div className={classes.promotion_title}>
 					<h3>Ưu Đãi </h3>
-					<h5>Khi Sử dụng gói định kỳ</h5>
+					<h5>khi sử dụng gói định kỳ</h5>
 				</div>
 					<div className={classes.promotion_button}>
-						Giao Hàng Tận Nơi 
+						Giao Hàng Tận Nơi Mỗi Ngày
 					</div>
 					<div  className={classes.promotion_button}>
 						Ưu Đãi Phí Ship

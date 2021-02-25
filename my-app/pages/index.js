@@ -16,7 +16,7 @@ import { useState } from 'react';
 
 export default function Home() {
 	const [visible, setVisisble] = useState(false)
-	const [pos, setPos] = useState(0)
+	const [pos, setPos] = useState(2)
 	return (
 		<div className={styles.container}>
 			<Head>

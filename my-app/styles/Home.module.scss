@@ -79,6 +79,7 @@
   padding: 0 0rem;
   display: flex;
   flex-direction: column;
+  background-color: #ededed;
   // justify-content: center;
   // align-items: center;
 }
@@ -167,18 +168,22 @@
 .feature{
   padding: 0 0.5rem;
   .title{
+    background-image: url('/images/greeno-logo_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     font-family: "SVN-LarchShaded";
     font-size: 4rem;
     text-align: center;
     color: #185c2b;
-    padding: 50px;
+    padding: 70px;
     @media only screen and (max-width: 1400px) {
       font-size: 3rem;
     }
   }
 }
 .highlight_main{
-  padding: 0 5rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-around;
   
@@ -257,6 +262,7 @@
     font-size: 2.8rem;
     color: #185c2b;
     text-align: center;
+    font-weight: 600;
     padding-top: 100px;
     @media only screen and (max-width: 1400px) {
       font-size: 2.2rem;
@@ -301,20 +307,21 @@
           }
           text-align: left;
           >h3{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             @media only screen and (min-width: 1400px) {
-              font-size: 2rem;
+              font-size: 1.7rem;
             }
+            font-weight: 600;
             font-family: "UTMGodsWord";
             color: #185c2b;
             text-transform: uppercase;
             margin-bottom: 0;
           }
           >h5{
-            color: #8b8b8b;
+            color: #777777;
             font-size: 16px;
             font-weight: 500;
-            margin-top: 10px;
+            // margin-top: 10px;
           }
         }
         
@@ -322,7 +329,7 @@
       .desc{
         padding: 20px;
         padding-bottom: 60px;
-        font-weight: 600;
+        font-weight: 700;
         color: #535353;
         line-height: 30px;
         font-size: 16px;
@@ -343,19 +350,28 @@
   width: 100%;
   padding-left: 2%;
   padding-right: 2%;
-  padding-bottom: 5%;
+  padding-bottom: 50px;
   @media only screen and (max-width: 1400px) {
     padding-left: 1%;
     padding-right: 1%;
   }
-  .title{
-    font-family: "SVN-LarchShaded";
-    font-size: 3.5rem;
-    text-align: center;
-    color: #185c2b;
-    padding: 10px 20px;
-    @media only screen and (max-width: 1400px) {
-      font-size: 3rem;
+  .main_title{
+    // .main_title_logo{
+    //   opacity: 0.2;
+    // }
+    .products_title{
+      background-image: url('/images/greeno-logo_bg.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-family: "SVN-LarchShaded";
+      font-size: 4rem;
+      text-align: center;
+      color: #185c2b;
+      padding: 70px;
+      @media only screen and (max-width: 1400px) {
+        font-size: 3.5rem;
+      }
     }
   }
   .products_main{
@@ -484,14 +500,14 @@
   color: white;
   // padding-left: 30px;
   // padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 22px;
   border-radius: 25px;
   border-color: #185c2b;
   border-width: 1px;
   border-style: solid;
-  width: 90%;
+  width: 70%;
   cursor: pointer;
   &:hover{
     background-color: white;
@@ -531,36 +547,42 @@
     h4{
       margin-top: 50px;
       font-size: 40px;
+      line-height: 45px;
       @media only screen and (max-width: 1400px) {
         margin-top: 50px;
         font-size: 30px;
+        line-height: 35px;
       }
       
+      color: #185c2b;
       font-family: "UTMGodsWord";
       text-transform: uppercase;
     }
-    
+    .quiz_logo{
+      margin-top: 50px;
+      width: 300px;
+    }
     .quiz_button{
       text-align: center;
       margin: 0 auto;
       background-color: #185c2b;
       color: white;
      
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 8px;
+      padding-bottom: 8px;
       font-size: 22px;
-      width: 80%;
+      width: 70%;
       @media only screen and (max-width: 1400px) {
         font-size: 16px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        width: 75%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 80%;
       }
       border-radius: 25px;
       border-color: #185c2b;
       border-width: 1px;
       border-style: solid;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       cursor: pointer;
       &:hover{
         background-color: white;
@@ -665,8 +687,12 @@
       border-color: #185c2b;
       border-width: 1px;
       border-style: solid;
-      width: 300px;
-      margin-bottom: 30px;
+      width: 50%;
+      margin-bottom: 10px;
+      @media only screen and (max-width: 1400px) {
+        width: 60%;
+      }
+      
       cursor: pointer;
       &:hover{
         background-color: white;
@@ -674,14 +700,16 @@
         color: #185c2b;
     
       }
-      text-transform: uppercase;
+      // text-transform: uppercase;
       font-family: Helvetica, sans-serif;
     }
     .promotion_hint{
+      
       font-size: 22px;
       width: 60%;
       text-align: center;
       margin: 0 auto;
+      margin-top: 30px;
       line-height: 30px;
       @media only screen and (max-width: 1400px) {
         font-size: 18px;
@@ -727,13 +755,18 @@
       .text1{
         font-family: "UTMGodsWord";
         font-size: 2rem;
+        font-weight: 600;
         text-transform: capitalize;
         color: #185c2b;
       }
       .text2{
         font-family: "UTMGodsWord";
-        font-size: 3.5rem;
+        font-size: 4.5rem;
+        @media only screen and (max-width: 1400px) {
+          font-size: 4rem;
+        }
         font-weight: 700;
+        line-height: 50px;
         text-transform: capitalize;
         color: #185c2b;
       }

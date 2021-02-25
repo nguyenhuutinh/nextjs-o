@@ -8,6 +8,7 @@ const Quiz = ({showForm,setPos }) => {
 		<div className={classes.quiz}>
 			<div className={classes.right}>
 				<div>
+				<LazyLoadImage src="../images/greeno-logo.png" className={classes.quiz_logo} effect={"blur"}/>
 				<h4>Bạn chọn <br/>cách làm đẹp nào</h4>
 				<div className={`${classes.quiz_button +" "+ (option == 0 ? classes.quiz_active : "")}`} onClick={()=>{setOption(0),setPos(0)}}>A. Giảm 1-2kg siết 2-3cm</div>
 				<div className={`${classes.quiz_button +" "+ (option == 1 ? classes.quiz_active : "")}`} onClick={()=>{setOption(1),setPos(1)}}>B. Giảm 2-3kg siết  5-7 cm</div>
