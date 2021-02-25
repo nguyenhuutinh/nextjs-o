@@ -7,11 +7,20 @@ const FormItem = Form.Item;
 const Quiz = ({ showForm, setPos, pos }) => {
 	const [form] = Form.useForm();
 	const questionRef = useRef();
+	const rightRef = useRef();
 	const [ option, setOption ] = useState(-1);
 	const [ step, setStep ] = useState(1);
+	const [ offsetHeight, setOffsetHeight ] = useState();
 	const router = useRouter();
 	const [ submiting, setSubmitting ] = useState(false);
-	console.log("pos", pos)
+	
+	useEffect(() => {
+		rightRef.current ? setOffsetHeight(rightRef.current.offsetHeight) : '';
+		return () => {
+			
+		}
+	}, [])
+	console.log("offsetheight", offsetHeight)
 	useEffect(() => {
 		form.setFieldsValue({"question":pos == 3
 			? 'Tăng sức đề kháng - đẹp da'
@@ -68,8 +77,9 @@ const Quiz = ({ showForm, setPos, pos }) => {
 
 	return (
 		<div className={classes.quiz}>
-			<div className={`${classes.right + ' ' + (step == 2 ? classes.flip : ' ')}`}>
-				<div className={classes.step1}>
+			<div className={`${classes.right + ' ' + (step == 2 ? classes.flip : ' ')}`} style={{height: offsetHeight }}>
+				
+				<div ref={rightRef} className={classes.step1}>
 					<div>
 						<LazyLoadImage src="../images/greeno-logo.png" className={classes.quiz_logo} effect={'blur'} />
 						<h4>

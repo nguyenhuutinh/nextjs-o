@@ -17,7 +17,7 @@ import { useState } from 'react';
 export default function Home() {
 	const [ visible, setVisisble ] = useState(false);
 	const [ pos, setPos ] = useState(2);
-	var videoheight = typeof window !== 'undefined' ? `${window.innerHeight/3 * 2}px` : '500px'
+	var videoheight = typeof window !== 'undefined' ? `${window.innerHeight/2}px` : '500px'
 	
 	return (
 		<div className={styles.container}>
@@ -25,9 +25,9 @@ export default function Home() {
 				<title>Green O - Sinh Tố Rau Sạch</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-
+			<Header />
 			<main className={styles.main}>
-				<Header />
+				
 				<LazyLoadImage
 					className={styles.banner1}
 					src="../images/banner1.jpg"
