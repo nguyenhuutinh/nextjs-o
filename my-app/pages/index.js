@@ -29,6 +29,7 @@ export default function Home() {
 			<main className={styles.main}>
 				
 				<LazyLoadImage
+					effect="blur"
 					className={styles.banner1}
 					src="../images/banner1.jpg"
 					placeholderSrc={'../images/banner1_pre.jpg'}
