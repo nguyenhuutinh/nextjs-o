@@ -19,7 +19,7 @@ const Quiz = ({showForm,setPos }) => {
 
 
 				<div className={classes.bottom}  onClick={()=>showForm(true)}>
-					Đăng Ký Tư Vấn <br/>Miễn Phí Tại Đây
+					Đăng Ký Tư Vấn Miễn Phí <br/> Tại Đây
 				</div>
 			</div>
 		</div>
