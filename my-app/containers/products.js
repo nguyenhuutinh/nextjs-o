@@ -14,7 +14,11 @@ const Products = ({onShowForm}) => {
 						pos:0,
 						image: '../images/product_1.jpg',
 						title: 'giảm 1-2kg, siết 2-3cm vòng bụng với',
-						title2: 'Gói 7 Ngày 21 Chai',
+						title2: 'Gói 7 Ngày - 3 Chai / 1 Ngày',
+						chai: 21,
+						gia:"1,785,000 ₫",
+						ship:"0 ₫",
+						ship_pre:"105,000 ₫",
                         onShowPopup:(pos)=>{onShowForm(pos)}
 					}}
 				/>
@@ -23,21 +27,41 @@ const Products = ({onShowForm}) => {
 						pos:1,
 						image: '../images/product_2.jpg',
 						title: 'giảm 2-3kg, siết 5-7cm vòng bụng với',
-						title2: 'Gói 7 Ngày 28 Chai',
+						title2: 'Gói 7 Ngày - 4 Chai / 1 Ngày',
+						chai: 28,
+						gia:"2,380,000 ₫",
+						ship:"0 ₫",
+						ship_pre:"105,000 ₫",
 						onShowPopup:(pos)=>{onShowForm(pos)}
 					}}
 				/>
-
+				
 				<Product
 					data={{
-						pos:2,
+						pos:3,
 						image: '../images/product_3.jpg',
 						title: 'giảm 3-5kg, siết 5-10cm vòng bụng với',
-						title2: 'Gói 14 Ngày 56 Chai',
+						title2: 'Gói 14 Ngày - 4 Chai / 1 Ngày',
+						chai: 56,
+						gia:"4,460,000 ₫",
+						ship:"0 ₫",
+						ship_pre:"210,000 ₫",
 						onShowPopup:(pos)=>{onShowForm(pos)}
 					}}
 				/>
-
+<Product
+					data={{
+						pos:4,
+						image: '../images/product_4.jpg',
+						title: 'tăng sức đề kháng - tươi sáng làn da với',
+						title2: 'Gói 14 Ngày - 2 Chai / 1 Ngày',
+						chai: 28,
+						gia:"2,380,000 ₫",
+						ship:"210,000 ₫",
+						
+						onShowPopup:(pos)=>{onShowForm(pos)}
+					}}
+				/>
 				
 
 				
