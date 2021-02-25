@@ -3,10 +3,10 @@ import styles from '../styles/Home.module.scss';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Promotion7Days = ({callback}) => {
-	
+	var videoheight = typeof window !== 'undefined' ? `${window.innerHeight /3 * 2 }px` : '500px'
 	return (
-		<div className={styles.promotion7days}>
-			<div className={styles.videopart2}>
+		<div className={styles.promotion7days} >
+			<div className={styles.videopart2} style={{height: videoheight}}>
 						<div className={styles.left} >
 			<div className={styles.text1}>Giải Pháp Hỗ Trợ Giảm Cân An Toàn </div>
               
@@ -17,7 +17,7 @@ const Promotion7Days = ({callback}) => {
 						<div className={styles.right}>
 							<iframe
 								width="100%"
-								height={typeof window !== 'undefined' ? window.innerHeight / 3 * 2 : "500px"}
+								height={videoheight}
 								src="https://www.youtube.com/embed/_GYDGjLBmfg"
 								frameBorder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
