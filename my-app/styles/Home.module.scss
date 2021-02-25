@@ -567,8 +567,9 @@
 .quiz{
   position: relative;
   background-image: url('/images/tuvan.jpg');
-  perspective: 1000px;
-  min-height: 96vh;
+  // perspective: 1000px;
+  min-height: 90vh;
+  // align-items: center;
   display: flex;
   justify-content: flex-end;
   background-size: cover;
