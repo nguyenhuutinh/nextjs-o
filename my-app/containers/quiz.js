@@ -91,7 +91,7 @@ const Quiz = ({ showForm, setPos, pos }) => {
 						<div
 							className={`${classes.quiz_button + ' ' + (option == 3 ? classes.quiz_active : '')}`}
 							onClick={() => {
-								setOption(3), setPos(3);
+								setOption(3), setPos(3);setStep(2)
 							}}
 						>
 							D. Tăng sức đề kháng - đẹp da{' '}
