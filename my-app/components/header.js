@@ -35,7 +35,7 @@ const Header = () => {
             </div>
             <div className={classes.header} style={{top: xx}}>
                 <div className={classes.left}>
-                    <Link href="/" style={{cursor:"pointers"}}><LazyLoadImage effect="blur"   className={classes.logo} src="../images/greeno-logo.png" /></Link>
+                    <Link href="/" style={{cursor:"pointers"}}><LazyLoadImage effect="blur"   className={classes.logo} src="../images/greeno-logo.png" placeholderSrc="../images/greeno-logo.png"/> </Link>
                     <div className={classes.slogan}>
                     Thải Độc - Giảm Cân - Đẹp Da
                     </div>

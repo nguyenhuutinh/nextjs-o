@@ -25,14 +25,14 @@ export default function Home() {
 				<title>Green O - Sinh Tố Rau Sạch</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			
+			<Header />
 			<main className={styles.main}>
-				<Header />
+				
 				<LazyLoadImage
 					effect="blur"
 					className={styles.banner1}
 					src="../images/banner1.jpg"
-					placeholderSrc={'../images/banner1_pre.jpg'}
+					
 				/>
 				<div className={styles.introvideo} >
 					<div className={styles.buttonpart}>
