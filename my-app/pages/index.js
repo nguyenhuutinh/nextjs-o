@@ -32,7 +32,7 @@ export default function Home() {
 					effect="blur"
 					className={styles.banner1}
 					src="../images/banner1.jpg"
-					
+					placeholderSrc={'../images/banner1_pre.jpg'}
 				/>
 				<div className={styles.introvideo} >
 					<div className={styles.buttonpart}>
