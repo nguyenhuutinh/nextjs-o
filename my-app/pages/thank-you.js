@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<div className={styles.container}>
             <Head>
-				<title>Green O- Sinh Tố Rau Sạch</title>
+				<title>Green O - Sinh Tố Rau Sạch</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
