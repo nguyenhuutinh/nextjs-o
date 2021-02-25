@@ -72,14 +72,14 @@ const Review = () => {
 					slidesToShow={3}
 					className={classes.carousel}
 					cellSpacing={20}
-					framePadding={"70px"}
+					framePadding={"50px"}
 					autoplay={true}
 					autoplayInterval={3500}
 					pauseOnHover={true}
 					lazyLoad="progressive"
 					renderBottomCenterControls={false}
 					// heightMode="max"
-					initialSlideHeight={700}
+					initialSlideHeight={450}
 					renderCenterLeftControls={({ previousSlide }) => (
 					  <div className={classes.buttonWrapper} ><DoubleLeftOutlined onClick={previousSlide} className={classes.buttonControl}/></div>
 					)}

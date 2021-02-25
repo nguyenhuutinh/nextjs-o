@@ -293,9 +293,9 @@
   .review_main{
     .review_item{
       border-color: transparent;
-      min-height: 70vh;
+      min-height: 40vh;
       @media only screen and (min-width: 1400px) {
-        min-height: 55vh;
+        min-height: 45vh;
       }
       background: #fbffde;
   
