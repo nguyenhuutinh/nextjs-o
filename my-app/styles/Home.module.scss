@@ -664,7 +664,10 @@
   justify-content: center;
  
   .left{
-    width: 49%;
+    width: 44%;
+    @media only screen and (max-width: 1400px) {
+      width: 49%;
+    }
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
