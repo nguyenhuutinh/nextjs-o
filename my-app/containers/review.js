@@ -79,7 +79,7 @@ const Review = () => {
 					lazyLoad="progressive"
 					renderBottomCenterControls={null}
 					// heightMode="max"
-					initialSlideHeight={450}
+					initialSlideHeight={500}
 					renderCenterLeftControls={({ previousSlide }) => (
 					  <div className={classes.buttonWrapper} ><DoubleLeftOutlined onClick={previousSlide} className={classes.buttonControl}/></div>
 					)}
