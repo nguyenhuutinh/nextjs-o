@@ -176,9 +176,10 @@
     font-size: 4rem;
     text-align: center;
     color: #185c2b;
-    padding: 70px;
+    padding: 50px;
     @media only screen and (max-width: 1400px) {
       font-size: 3rem;
+      padding: 40px;
     }
   }
 }
@@ -256,6 +257,20 @@
 }
 .review{
   text-align: center;
+  .buttonControl{
+    font-size: 30px;
+    padding: 10px;
+  }
+  .buttonwrapper{
+    height: 100%;
+    cursor: pointer;
+    &:focus{
+      outline: 0px solid transparent;
+
+    }
+    outline: 0px solid transparent;
+
+  }
   .title{
     font-family: "UTMGodsWord";
     text-transform: uppercase;
@@ -277,9 +292,10 @@
   }
   .review_main{
     .review_item{
-      min-height: 60vh;
+      border-color: transparent;
+      min-height: 70vh;
       @media only screen and (min-width: 1400px) {
-        min-height: 45vh;
+        min-height: 55vh;
       }
       background: #fbffde;
   
@@ -368,9 +384,10 @@
       font-size: 4rem;
       text-align: center;
       color: #185c2b;
-      padding: 70px;
+      padding: 50px;
       @media only screen and (max-width: 1400px) {
         font-size: 3.5rem;
+        padding: 40px;
       }
     }
   }
@@ -388,7 +405,7 @@
       //   margin: 0 0.5rem;
       // }
       // width: 100%;
-      padding-top: 20px;
+      padding-top: 10px;
       
       .product_image_view{
         position: relative;
@@ -396,7 +413,7 @@
           border-radius: 50%;
           width: 80%;
           @media only screen and (max-width: 1400px) {
-            width: 90%;
+            width: 80%;
           }
           // border-color: #3f901e;
           // border-width: 1px;
@@ -474,6 +491,11 @@
         margin-top: 20px;
         color: #000;
         font-size: 18px;
+        @media only screen and (max-width: 1400px) {
+          font-size: 16px;
+          margin-top: 10px;
+          
+        }
         transition: .3s ease-in-out;
         text-align: center;
       }
@@ -481,12 +503,17 @@
         text-align: center;
         color: #000;
         font-size: 18px;
+        @media only screen and (max-width: 1400px) {
+          font-size: 16px;
+          margin-top: 10px;
+          
+        }
         transition: .3s ease-in-out;
         >span{
           color: #ab7321;
           text-decoration: line-through;
         }
-        margin-bottom: 40px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -521,6 +548,7 @@
   font-family:  sans-serif;
   @media only screen and (max-width: 1400px) {
     font-size: 16px;
+    margin-top: 10px;
     
   }
   font-weight: 400;

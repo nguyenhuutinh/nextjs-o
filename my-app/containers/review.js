@@ -3,6 +3,7 @@ import classes from '../styles/Home.module.scss';
 import Carousel from 'nuka-carousel';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Rate } from 'antd';
+import {DoubleLeftOutlined, DoubleRightOutlined} from '@ant-design/icons'
 const feedback = [
 	{
 		img: '../images/kh1.jpg',
@@ -71,20 +72,20 @@ const Review = () => {
 					slidesToShow={3}
 					className={classes.carousel}
 					cellSpacing={20}
-					framePadding={"30px"}
+					framePadding={"70px"}
 					autoplay={true}
 					autoplayInterval={3500}
 					pauseOnHover={true}
 					lazyLoad="progressive"
 					renderBottomCenterControls={false}
 					// heightMode="max"
-					initialSlideHeight={600}
-					// renderCenterLeftControls={({ previousSlide }) => (
-					//   <div className={styles.buttonControl}><button  onClick={previousSlide}><Icon type="left" /></button></div>
-					// )}
-					// renderCenterRightControls={({ nextSlide }) => (
-					//   <div className={styles.buttonControl} ><button  onClick={nextSlide}><Icon type="right" /></button></div>
-					// )}
+					initialSlideHeight={700}
+					renderCenterLeftControls={({ previousSlide }) => (
+					  <div className={classes.buttonWrapper} ><DoubleLeftOutlined onClick={previousSlide} className={classes.buttonControl}/></div>
+					)}
+					renderCenterRightControls={({ nextSlide }) => (
+					  <div  className={classes.buttonWrapper}  ><DoubleRightOutlined onClick={nextSlide} className={classes.buttonControl}/></div>
+					)}
 				>
 					{feedback.map((record, index) => {
 						return (
