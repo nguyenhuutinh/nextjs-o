@@ -76,6 +76,7 @@ const Review = () => {
 					autoplayInterval={3500}
 					pauseOnHover={true}
 					lazyLoad="progressive"
+					renderBottomCenterControls={false}
 					// heightMode="max"
 					initialSlideHeight={600}
 					// renderCenterLeftControls={({ previousSlide }) => (
