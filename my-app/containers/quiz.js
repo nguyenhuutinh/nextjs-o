@@ -5,12 +5,23 @@ import { Button, Form, Input, Select } from 'antd';
 import { useRouter } from 'next/router';
 const FormItem = Form.Item;
 const Quiz = ({ showForm, setPos, pos }) => {
-	const form = useRef();
+	const [form] = Form.useForm();
 	const questionRef = useRef();
 	const [ option, setOption ] = useState(-1);
 	const [ step, setStep ] = useState(1);
 	const router = useRouter();
 	const [ submiting, setSubmitting ] = useState(false);
+	console.log("pos", pos)
+	useEffect(() => {
+		form.setFieldsValue({"question":pos == 3
+			? 'Tăng sức đề kháng - đẹp da'
+			: pos == 2
+				? 'Giảm 3-5kg, siết 5-10cm'
+				: pos == 1 ? 'Giảm 2-3kg, siết 5-7cm' : 'Giảm 1-2kg, siết 2-3cm'})
+		return () => {
+			
+		}
+	}, [pos])
 	const sendData = (question, name, phone) => {
 		var xhr = new XMLHttpRequest();
 		var params = `your-name=${name}&tel-353=${phone}&your-message=${question}`;
@@ -112,7 +123,7 @@ const Quiz = ({ showForm, setPos, pos }) => {
 						<Form
 							className={classes.form}
 							requiredMark={true}
-							ref={form}
+							form={form}
 							onFinish={handleSubmit}
 							style={{ marginTop: 8, margin: '0' }}
 							initialValues={{
