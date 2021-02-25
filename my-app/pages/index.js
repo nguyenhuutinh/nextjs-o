@@ -39,7 +39,7 @@ export default function Home() {
               <br/>
               <br/>
               <div className={styles.text1}>Phóng Sự Góc Nhìn Người Tiêu Dùng</div>
-              <br/>
+              
               <div className={styles.text2}>VTC2</div>
             </div>
 						<div className={styles.right}>
