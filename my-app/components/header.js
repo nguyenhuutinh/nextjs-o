@@ -9,31 +9,54 @@ const Header = () => {
     const height = 20;
     const [isScroll, setScroll] = useState(false);
     useEffect(() => {
+      var prevScrollpos = window.pageYOffset;
+      setTimeout(() => {
+        if (prevScrollpos == 0 && isScroll == -2) {
+          setScroll(0);
+        }
+      }, 300);
+  
       window.onscroll = function(e) {
         {
-          if (window.pageYOffset > height) {
-            setScroll(true);
+          var currentScrollPos = window.pageYOffset;
+          // this.console.log(currentScrollPos)
+          if (prevScrollpos > currentScrollPos || currentScrollPos <= 100) {
+            if (currentScrollPos < 100) {
+              setScroll(0);
+            } else {
+              setScroll(1); // up
+            }
           } else {
-            setScroll(false);
+            setScroll(-1); // down
           }
+  
+          prevScrollpos = currentScrollPos;
         }
       };
       return () => {
         // console.log('Cleaned up');
-        setScroll(false);
+        //   setScroll(false);
         window.onscroll = null;
       };
     }, []);
-    var xx = isScroll ? `${height - window.pageYOffset> 0 ? height - window.pageYOffset : 0}px` : `${height}px`
+    var isWhite = false
+    var container =
+		isScroll == -1
+			? `${classes.headerD + ' ' + (isWhite ? classes.headerWhite : classes.header)}`
+			: isScroll == 1
+				? `${classes.headerU + ' ' + (isWhite ? classes.headerWhite : classes.header)}`
+				: isScroll != -2
+					? `${isWhite ? classes.headerWhite : classes.header}`
+					: `${classes.headerD + ' ' + (isWhite ? classes.headerWhite : classes.header)}`;
 	
 	return (
-		<div>
+		<div className={`${container}`}>
             <div className={classes.topbar}>
                 
                 <div>416A1 Hai Bà Trưng, Phường Tân Định, Quận 1, TP. Hồ Chí Minh</div>
                 <div>Hotline: 1900 63 67 91 - 0909 09 60 60 - 0909 44 80 60</div>
             </div>
-            <div className={classes.header} style={{top: xx}}>
+            <div className={classes.headerMain}>
                 <div className={classes.left}>
                     <Link href="/" style={{cursor:"pointers"}}><LazyLoadImage effect="blur"   className={classes.logo} src="../images/greeno-logo.png" placeholderSrc="../images/greeno-logo.png"/></Link>
                     <div className={classes.slogan}>

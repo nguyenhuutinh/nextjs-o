@@ -128,7 +128,7 @@ const Quiz = ({ showForm, setPos, pos }) => {
 						{/* <LazyLoadImage src="../images/greeno-logo.png" className={classes.quiz_logo} effect={'blur'} /> */}
 						<h4>
 							Đăng ký Ngay Hôm Nay<br />Để Nhận Tư Vấn Miễn Phí<br />Về Liệu Trình Giảm Cân<br />Cùng
-							GreenO
+							Green O
 						</h4>
 						<Form
 							className={classes.form}
