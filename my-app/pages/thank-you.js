@@ -24,7 +24,7 @@ export default function Home() {
 			<main className={styles.main}>
 				<Header />
             
-			<Card className={styles.thankyou_card}>
+			<Card bordered={false} className={styles.thankyou_card}>
 			
 			<LazyLoadImage src="../images/greeno-logo.png" className={styles.thankyou_logo} effect={'blur'} />
                     <div className={styles.thankyou_text}>Cảm ơn quý khách đã liên hệ.<br/>Bộ Phận CSKH của Green O sẽ liên lạc lại trong thời gian sớm nhất!
