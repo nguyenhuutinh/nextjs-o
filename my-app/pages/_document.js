@@ -8,9 +8,13 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
-        <Head />
-        <body>
+      <Html lang="vi" translate="no" class="notranslate" >
+        
+
+        <Head>
+        <meta name="google" content="notranslate"/>
+        </Head>
+        <body class="notranslate">
           <Main />
           <NextScript />
         </body>
