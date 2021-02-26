@@ -81,7 +81,7 @@ const Quiz = ({ showForm, setPos, pos }) => {
 				
 				<div ref={rightRef} className={classes.step1}>
 					<div>
-						<LazyLoadImage src="../images/greeno-logo.png" className={classes.quiz_logo} effect={'blur'} />
+						{/* <LazyLoadImage src="../images/greeno-logo.png" className={classes.quiz_logo} effect={'blur'} /> */}
 						<h4>
 							Bạn chọn <br />cách làm đẹp nào
 						</h4>
@@ -125,7 +125,7 @@ const Quiz = ({ showForm, setPos, pos }) => {
 				</div>
 				<div className={classes.step2}>
 					<div>
-						<LazyLoadImage src="../images/greeno-logo.png" className={classes.quiz_logo} effect={'blur'} />
+						{/* <LazyLoadImage src="../images/greeno-logo.png" className={classes.quiz_logo} effect={'blur'} /> */}
 						<h4>
 							Đăng ký Ngay Hôm Nay<br />Để Nhận Tư Vấn Miễn Phí<br />Về Liệu Trình Giảm Cân<br />Cùng
 							GreenO
