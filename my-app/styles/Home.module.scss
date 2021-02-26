@@ -681,7 +681,13 @@
       .quiz_logo{
         margin-top: 50px;
         
-        height: 140px;
+        height: 100px;
+        @media only screen and (min-width: 1600px) {
+          height: 140px;
+        }
+        @media only screen and (min-width: 1500px) {
+          height: 120px;
+        }
       }
       .quiz_button{
         font-family: 'TUV-Domaine-Regular';
