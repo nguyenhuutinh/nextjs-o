@@ -361,12 +361,12 @@
     margin-top: -50px;
     .review_item{
       border-color: transparent;
-      min-height: 60vh;
+      min-height: 90vh;
       @media only screen and (max-width: 1200px) {
         min-height: 80vh;
       }
       @media only screen and (min-width: 1500px) {
-        min-height: 60vh;
+        min-height: 70vh;
       }
       @media only screen and (min-width: 1600px) {
         min-height: 50vh;
