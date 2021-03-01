@@ -90,6 +90,7 @@ export default function Home() {
 				<Promotion />
 				<Promotion7Days callback={(bool) => setVisisble(bool)} />
 				<Modal
+					centered
 					visible={visible}
 					width={'45%'}
 					// onOk={()=>{}}
