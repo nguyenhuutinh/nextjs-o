@@ -16,7 +16,7 @@ const Promotion7Days = ({ callback }) => {
 				</div>
 				<div className={styles.right}>
 					<iframe
-						width="100%"
+						width="95%"
 						height={videoheight}
 						src="https://www.youtube.com/embed/_GYDGjLBmfg"
 						frameBorder="0"

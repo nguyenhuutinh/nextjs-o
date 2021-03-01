@@ -54,13 +54,13 @@ export default function Home() {
 							/> */}
 							{/* <br /> */}
 							{/* <br /> */}
-							<div className={styles.text1}>Phóng Sự Góc Nhìn Người Tiêu Dùng VTC2</div>
+							<div className={styles.text1}>Phóng Sự<br/>Góc Nhìn Người Tiêu Dùng VTC2</div>
 
 							
 						</div>
 						<div className={styles.right}>
 							<iframe
-								width="100%"
+								width="95%"
 								height={videoheight}
 								src="https://www.youtube.com/embed/Kz76S_h-76Y"
 								frameBorder="0"
@@ -89,6 +89,8 @@ export default function Home() {
 				<Promotion />
 				<Promotion7Days callback={(bool) => setVisisble(bool)} />
 				<Modal
+					closable={false}
+					
 					visible={visible}
 					width={'95%'}
 					centered
