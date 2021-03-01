@@ -1033,3 +1033,14 @@
   margin: 50px auto 20px auto;
 
 }
+
+
+.hotline{
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  .hotline_img{
+    width: 60px;
+    height: 60px;
+  }
+}

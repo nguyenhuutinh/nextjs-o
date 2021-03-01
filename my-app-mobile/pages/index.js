@@ -118,7 +118,7 @@ export default function Home() {
 
 				
 			</main>
-
+			<a href="tel:+1900636791" className={styles.hotline}> <img src="../images/hotline.png" className={styles.hotline_img }effect={'blur'} /></a>
 			<footer className={styles.footer}>
 				<LazyLoadImage src="../images/greeno-logo.png" className={styles.footer_logo} effect={'blur'} />
 				<div className={styles.footer_content}>
@@ -139,6 +139,7 @@ export default function Home() {
 				<div className={styles.separator}></div>
 				<div className={styles.trademak}>Copyright © 2021 Green O - Sinh Tố Rau Sạch.<br/>All Rights Reserved.</div>
 			</footer>
+			
 		</div>
 	);
 }
