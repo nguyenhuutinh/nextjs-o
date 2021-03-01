@@ -71,6 +71,12 @@ export default function Home() {
 					</div>
 				</div>
 				<Feature /> 
+				<LazyLoadImage
+					effect="blur"
+					className={styles.banner2}
+					src="../images/banner2.jpg"
+					placeholderSrc={'../images/banner2-pre.jpg'}
+				/>
 				<Review />
 				<Quiz
 					setPos={(pos) => setPos(pos)}
@@ -108,19 +114,9 @@ export default function Home() {
 						}}
 					/>
 				</Modal> 
-				{/* <LazyLoadImage
-					effect="blur"
-					className={styles.banner2}
-					src="../images/banner2.jpg"
-					placeholderSrc={'../images/banner2-pre.jpg'}
-				/> */}
+				
 
-				{/* 
-				<Review />
 				
-				<Promotion />
-				
-				*/}
 			</main>
 
 			<footer className={styles.footer}>
