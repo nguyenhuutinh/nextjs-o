@@ -527,12 +527,12 @@
       }
 
       cursor: pointer;
-      &:hover{
-        z-index: 1;
-        transform: translate3d(0,-8px,0);
-        transition: transform .3s ease;
-        box-shadow: 10px 10px 55px -4px rgb(0 0 0 / 41%);
-      }
+      // &:hover{
+      //   z-index: 1;
+      //   transform: translate3d(0,-8px,0);
+      //   transition: transform .3s ease;
+      //   box-shadow: 10px 10px 55px -4px rgb(0 0 0 / 41%);
+      // }
       .price{
         margin-top: 10px;
         color: #000;
