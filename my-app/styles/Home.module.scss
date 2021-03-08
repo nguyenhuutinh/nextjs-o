@@ -55,7 +55,7 @@
   width: 100%;
   box-shadow: 0 2px hsl(0deg 0% 95% / 62%);
   .left{
-    width: 60%;
+    width: 65%;
     display: flex;
     // justify-content: space-between;
     align-items: center;
@@ -71,10 +71,14 @@
       color: #185c2b;
       font-size: 22px;
       line-height: 21px;
+      @media only screen and (max-width: 1400px) {
+        font-size: 19px;
+        line-height: 20px;
+      }
     }
   }
   .right{
-    width: 40%;
+    width: 35%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
