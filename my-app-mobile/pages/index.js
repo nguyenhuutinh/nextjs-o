@@ -63,6 +63,7 @@ export default function Home() {
 						</div>
 						<div className={styles.right}>
 							<iframe
+								loading="lazy"
 								width="95%"
 								height={videoheight}
 								src="https://www.youtube.com/embed/Kz76S_h-76Y"
