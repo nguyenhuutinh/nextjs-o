@@ -9,34 +9,34 @@ const Header = () => {
     const height = 20;
     const [isScroll, setScroll] = useState(false);
     useEffect(() => {
-      var prevScrollpos = window.pageYOffset;
-      setTimeout(() => {
-        if (prevScrollpos == 0 && isScroll == -2) {
-          setScroll(0);
-        }
-      }, 300);
+      // var prevScrollpos = window.pageYOffset;
+      // setTimeout(() => {
+      //   if (prevScrollpos == 0 && isScroll == -2) {
+      //     setScroll(0);
+      //   }
+      // }, 300);
   
-      window.onscroll = function(e) {
-        {
-          var currentScrollPos = window.pageYOffset;
-          // this.console.log(currentScrollPos)
-          if (prevScrollpos > currentScrollPos || currentScrollPos <= 100) {
-            if (currentScrollPos < 100) {
-              setScroll(0);
-            } else {
-              setScroll(1); // up
-            }
-          } else {
-            setScroll(-1); // down
-          }
+      // window.onscroll = function(e) {
+      //   {
+      //     var currentScrollPos = window.pageYOffset;
+      //     // this.console.log(currentScrollPos)
+      //     if (prevScrollpos > currentScrollPos || currentScrollPos <= 100) {
+      //       if (currentScrollPos < 100) {
+      //         setScroll(0);
+      //       } else {
+      //         setScroll(1); // up
+      //       }
+      //     } else {
+      //       setScroll(-1); // down
+      //     }
   
-          prevScrollpos = currentScrollPos;
-        }
-      };
+      //     prevScrollpos = currentScrollPos;
+      //   }
+      // };
       return () => {
         // console.log('Cleaned up');
         //   setScroll(false);
-        window.onscroll = null;
+        // window.onscroll = null;
       };
     }, []);
     var isWhite = false
