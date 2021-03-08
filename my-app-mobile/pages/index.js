@@ -19,11 +19,12 @@ export default function Home() {
 	const [ pos, setPos ] = useState(2);
 	var videoheight = typeof window !== 'undefined' ? `${window.innerHeight/5*2}px` : '300px'
 	const [touchDevice, setTouchDevice] = useState(false);
-	useEffect(() => {
-		setTouchDevice("ontouchstart" in document.documentElement);
-	  }, []);
+	
+	const onTouchStart = ()=>{
+		setTouchDevice(true)
+	}
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} onTouchStart={onTouchStart}>
 			<Head>
 				<title>Green O - Sinh Tố Rau Sạch</title>
 				<link rel="icon" href="/favicon.ico" />
