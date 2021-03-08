@@ -12,13 +12,16 @@ import Promotion7Days from '../containers/promotion7days';
 import { Modal } from 'antd';
 import { Button } from 'antd';
 import RegisterForm from '../components/RegisterForm';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
 	const [ visible, setVisisble ] = useState(false);
 	const [ pos, setPos ] = useState(2);
 	var videoheight = typeof window !== 'undefined' ? `${window.innerHeight/5*2}px` : '300px'
-	
+	const [touchDevice, setTouchDevice] = useState(false);
+	useEffect(() => {
+		setTouchDevice("ontouchstart" in document.documentElement);
+	  }, []);
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -70,30 +73,30 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<Feature /> 
-				<LazyLoadImage
+				{touchDevice && <Feature /> }
+				{touchDevice && <LazyLoadImage
 					effect="blur"
 					className={styles.banner2}
 					src="../images/banner2.jpg"
 					placeholderSrc={'../images/banner2-pre.jpg'}
-				/>
-				<Review />
-				<Quiz
+				/>}
+				{touchDevice && <Review />}
+				{touchDevice && <Quiz
 					setPos={(pos) => setPos(pos)}
 					showForm={() => {
 						setVisisble(true);
 					}}
 					pos={pos}
-				/>
+				/>}
 				<div className={styles.separator}></div>
-				<Products
+				{touchDevice && <Products
 					onShowForm={(pos) => {
 						setPos(pos);
 						setVisisble(true);
 					}}
-				/>
-				<Promotion />
-				<Promotion7Days callback={(bool) => setVisisble(bool)} />
+				/>}
+				{touchDevice && <Promotion />}
+				{touchDevice &&<Promotion7Days callback={(bool) => setVisisble(bool)} />}
 				<Modal
 					closable={false}
 					
