@@ -60,7 +60,7 @@ const Header = () => {
                 <div className={classes.left}>
                     <Link href="/" style={{cursor:"pointers"}}><LazyLoadImage effect="blur"   className={classes.logo} src="../images/greeno-logo.png" placeholderSrc="../images/greeno-logo.png"/></Link>
                     <div className={classes.slogan}>
-                    Thải Độc - Giảm Cân - Đẹp Da
+                    Sinh tố, nước ép xay tươi mỗi ngày từ rau củ quả chuẩn VietGap
                     </div>
                 </div>
                 <div className={classes.right}>
