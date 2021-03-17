@@ -317,10 +317,10 @@
     // }
   }
   .review_main{
-    margin-top: -30px;
+    margin-top: -10px;
     .review_item{
       border-color: transparent;
-      min-height: 40vh;
+      min-height: 50vh;
       // @media only screen and (max-width: 1200px) {
       //   min-height: 80vh;
       // }
@@ -343,7 +343,7 @@
           // width: 150px;
           // height: 150px;
           width: 80px;
-            height: 80px;
+          height: 80px;
         }
         .review_info{
           margin-left: 20px;
@@ -601,7 +601,7 @@
   font-weight: 400;
 }
 .quiz{
-  margin-top: -40px;
+  margin-top: 10px;
   .quiz_image{
     width: 100%;
     height: auto;

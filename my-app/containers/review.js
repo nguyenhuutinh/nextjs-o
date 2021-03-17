@@ -6,6 +6,13 @@ import { Rate } from 'antd';
 import {DoubleLeftOutlined, DoubleRightOutlined} from '@ant-design/icons'
 const feedback = [
 	{
+		img: '../images/kh0.jpg',
+		name: 'NS Nguyễn Văn Chung',
+		yold: '39 Tuổi',
+		desc:
+			'Sau liệu trình mỡ 2 bên hông vốn là điều mà Chung không ưa từ trước giờ lại giảm đi rõ rệt. Điều này khiến Chung khá vui. Hệ thống bài tiết hoạt động hiệu quả, điều khiến Chung bất ngờ là vào 1 ngày đẹp trời bất chợt sờ tay lên mặt và nhận ra sao da mặt mình bỗng đẹp và mịn hơn trước!'
+	},
+	{
 		img: '../images/kh1.jpg',
 		name: 'Chị My',
 		yold: '25 Tuổi',
@@ -74,7 +81,7 @@ const Review = () => {
 					cellSpacing={20}
 					framePadding={"70px"}
 					autoplay={true}
-					autoplayInterval={3500}
+					autoplayInterval={10000}
 					pauseOnHover={true}
 					lazyLoad="progressive"
 					renderBottomCenterControls={null}
