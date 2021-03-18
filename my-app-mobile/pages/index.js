@@ -90,6 +90,34 @@ export default function Home() {
 					}}
 					pos={pos}
 				/>}
+				<div className={styles.introvideo2} >
+					
+					<div className={styles.videopart}>
+						<div className={styles.left}>
+							{/* <LazyLoadImage
+								src="../images/greeno-logo.png"
+								className={styles.video_logo}
+								effect={'blur'}
+							/> */}
+							{/* <br /> */}
+							{/* <br /> */}
+							<div className={styles.text1}>Phóng Sự<br/>Góc Nhìn Người Tiêu Dùng VTC2</div>
+
+							
+						</div>
+						<div className={styles.right}>
+							<iframe
+								loading="lazy"
+								width="95%"
+								height={videoheight}
+								src="https://www.youtube.com/embed/Kz76S_h-76Y"
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowFullScreen
+							/>
+						</div>
+					</div>
+				</div>
 				<div className={styles.separator}></div>
 				{touchDevice && <Products
 					onShowForm={(pos) => {
