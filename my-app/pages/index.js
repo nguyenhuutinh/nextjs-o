@@ -82,6 +82,35 @@ export default function Home() {
 					}}
 					pos={pos}
 				/>
+				<div className={styles.introvideo2} >
+					
+					<div className={styles.videopart} style={{height: videoheight}}>
+						<div className={styles.left}>
+						
+							<div className={styles.text1}>Quy Trình Chế Biến</div>
+							<br />
+							<br />
+							<LazyLoadImage
+								src="../images/greeno-logo.png"
+								className={styles.video_logo}
+								effect={'blur'}
+							/>
+							
+
+						</div>
+						<div className={styles.right}>
+							<iframe
+								width="100%"
+								height={videoheight}
+								src="https://www.youtube.com/embed/lAa19qAMzpU"
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowFullScreen
+								loading="lazy"
+							/>
+						</div>
+					</div>
+				</div>
 				<Products
 					onShowForm={(pos) => {
 						setPos(pos);
