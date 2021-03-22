@@ -13,6 +13,13 @@ const feedback = [
 			'Sau liệu trình mỡ 2 bên hông vốn là điều mà Chung không ưa từ trước giờ lại giảm đi rõ rệt. Điều này khiến Chung khá vui. Hệ thống bài tiết hoạt động hiệu quả, điều khiến Chung bất ngờ là vào 1 ngày đẹp trời bất chợt sờ tay lên mặt và nhận ra sao da mặt mình bỗng đẹp và mịn hơn trước!'
 	},
 	{
+		img: '../images/kh7.jpg',
+		name: 'Ca Sĩ Trần Quốc Thiên',
+		yold: '33 Tuổi',
+		desc:
+			'Mình dùng Green O đã 2 tháng, ban đầu chỉ nghĩ uống 2 liệu trình(2 tuần) là ngưng. Nhưng không ngờ hiệu quả tức thì, rõ rệt nên quyết định uống lâu dài. Cảm nhận rõ nhất về làn da, da mặt và da body căng bóng trộm vía trông khoẻ khoắn hơn cực. Bây giờ chấp cả make up liên tục liên da dẻ vẫn đẹp. Cái nữa là rất nhuận tràng, cơ thể nhẹ nhàng hơn trước nhiều.'
+	},
+	{
 		img: '../images/kh1.jpg',
 		name: 'Chị My',
 		yold: '25 Tuổi',
