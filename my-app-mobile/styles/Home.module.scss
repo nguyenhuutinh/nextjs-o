@@ -14,6 +14,14 @@
     url('/fonts/TUV-Domaine-Regular.ttf') format('truetype'),
  
 }
+@font-face {
+  font-weight: normal;
+  font-family: 'SVNLinux';
+  font-style: normal;
+  src: 
+    url('/fonts/SVN-LinuxLibertinebolditalic.ttf') format('truetype'),
+ 
+}
 
 @font-face {
   font-weight: normal;
@@ -38,18 +46,26 @@
   align-items: center;
   top:0;
   z-index: 1000;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   .toplogo{
-    width: 100px;
+    width: 80px;
     height: auto;
-    margin: 5px;
+    margin: 10px;
   }
   p{
-    padding: 0 10px;
+    padding: 0 15px;
     color: white;
     margin-bottom: 0;
-    line-height: 16px;
+    line-height: 14px;
+    font-size: 12px;
+    font-family: 'SVNLinux';
+    color: #e6c65e;
+    text-transform: uppercase;
+    text-align: center;
+    @media only screen and (max-width: 320px) {
+      font-size: 10px;
+    }
   }
 }
 .container {
