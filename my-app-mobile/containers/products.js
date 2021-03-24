@@ -14,7 +14,7 @@ const Products = ({ onShowForm }) => {
 					data={{
 						pos: 0,
 						image: '../images/product_1.jpg',
-						title: 'giảm 1-2kg, siết 2-3cm vùng bụng với',
+						title: 'giảm 1-2kg, siết 2-3cm mỡ thừa với',
 						title2: '7 Ngày - 3 Chai / 1 Ngày',
 						chai: 21,
 						gia: '1,785,000 ₫',
@@ -29,7 +29,7 @@ const Products = ({ onShowForm }) => {
 					data={{
 						pos: 1,
 						image: '../images/product_2.jpg',
-						title: 'giảm 2-3kg, siết 5-7cm vùng bụng với',
+						title: 'giảm 2-3kg, siết 5-7cm mỡ thừa với',
 						title2: '7 Ngày - 4 Chai / 1 Ngày',
 						chai: 28,
 						gia: '2,380,000 ₫',
@@ -45,7 +45,7 @@ const Products = ({ onShowForm }) => {
 					data={{
 						pos: 2,
 						image: '../images/product_4.jpg',
-						title: 'giảm 3-5kg, siết 5-10cm vùng bụng với',
+						title: 'giảm 3-5kg, siết 5-10cm mỡ thừa với',
 						title2: '14 Ngày - 4 Chai / 1 Ngày',
 						chai: 56,
 						gia: '4,460,000 ₫',
