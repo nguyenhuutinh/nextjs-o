@@ -13,6 +13,7 @@ import { Modal } from 'antd';
 import { Button } from 'antd';
 import RegisterForm from '../components/RegisterForm';
 import { useEffect, useState } from 'react';
+import Benefit from '../containers/benefit';
 
 export default function Home() {
 	const [ visible, setVisisble ] = useState(false);
@@ -118,6 +119,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>}
+				{touchDevice &&<Benefit/>}
 				<div className={styles.separator}></div>
 				{touchDevice && <Products
 					onShowForm={(pos) => {

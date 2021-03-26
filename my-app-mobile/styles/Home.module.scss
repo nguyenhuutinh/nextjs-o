@@ -37,6 +37,25 @@
 }
 
 
+@font-face {
+  font-weight: normal;
+  font-family: 'helveticaLight';
+  font-style: normal;
+  src: url('/fonts/helvetica-neue-light.ttf') format('truetype'),
+}
+@font-face {
+  font-weight: normal;
+  font-family: 'helveticaBold';
+  font-style: normal;
+  src: url('/fonts/helvetica-neue-bold.ttf') format('truetype'),
+}
+@font-face {
+  font-weight: normal;
+  font-family: 'VLArialRoundedMTBold';
+  font-style: normal;
+  src: url('/fonts/VLArialRoundedMTBold.ttf') format('truetype'),
+}
+
 .mobileTop{
   background-color: #084f1f;
   height: auto;
@@ -1123,5 +1142,56 @@
   .hotline_img{
     width: 60px;
     height: 60px;
+  }
+}
+
+
+
+.benefit{
+  margin-top: 20px;
+  // padding-bottom: 20px;
+  // box-shadow: 10px 10px 56px -32px rgba(0,0,0,0.45);
+  // -webkit-box-shadow: 10px 10px 56px -32px rgba(0,0,0,0.45);
+  // -moz-box-shadow: 10px 10px 56px -32px rgba(0,0,0,0.45);
+  .title{
+    margin: 0 10px;
+    background-color: #044f22;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    h2{
+      color: white;
+      font-size: 22px;
+      margin-bottom: 0px;
+      font-family: 'VLArialRoundedMTBold';
+    } 
+  }
+  .body{
+  
+
+  }
+  ul{
+    margin-top: 20px;
+    color: #044f22;
+    text-align: left;
+    // margin-left: 20px;
+    margin-right: 20px;
+    li{
+      font-size: 18px;
+      color: #000;
+      margin-top: 10px;
+      font-family: 'helveticaLight';
+      b{
+        color: #044f22;
+        font-family: 'helveticaBold';
+      }
+      &::marker{
+        color: #044f22;
+      }
+    }
+  
   }
 }
