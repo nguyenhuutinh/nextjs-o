@@ -8,6 +8,7 @@ import Review from '../containers/review';
 import Quiz from '../containers/quiz';
 import Products from '../containers/products';
 import Promotion from '../containers/promotion';
+import Benefit from '../containers/benefit';
 import Promotion7Days from '../containers/promotion7days';
 import { Modal } from 'antd';
 import { Button } from 'antd';
@@ -111,6 +112,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
+				<Benefit/>
 				<Products
 					onShowForm={(pos) => {
 						setPos(pos);

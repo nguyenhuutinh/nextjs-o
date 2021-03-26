@@ -23,10 +23,29 @@
 }
 @font-face {
   font-weight: normal;
+  font-family: 'helveticaLight';
+  font-style: normal;
+  src: url('/fonts/helvetica-neue-light.ttf') format('truetype'),
+}
+@font-face {
+  font-weight: normal;
+  font-family: 'helveticaBold';
+  font-style: normal;
+  src: url('/fonts/helvetica-neue-bold.ttf') format('truetype'),
+}
+@font-face {
+  font-weight: normal;
   font-family: 'VLALEXONBOLD-ROMAN';
   font-style: normal;
   src: url('/fonts/VLALEXONBOLD-ROMAN.otf') format('truetype'),
 }
+@font-face {
+  font-weight: normal;
+  font-family: 'VLArialRoundedMTBold';
+  font-style: normal;
+  src: url('/fonts/VLArialRoundedMTBold.ttf') format('truetype'),
+}
+
 .topbar{
   
   width: 100%;
@@ -1186,4 +1205,55 @@
   text-align: center;
   margin: 50px auto 20px auto;
 
+}
+
+
+
+.benefit{
+  margin-top: 40px;
+  padding-bottom: 50px;
+  box-shadow: 10px 10px 56px -32px rgba(0,0,0,0.45);
+  -webkit-box-shadow: 10px 10px 56px -32px rgba(0,0,0,0.45);
+  -moz-box-shadow: 10px 10px 56px -32px rgba(0,0,0,0.45);
+  .title{
+   
+    background-color: #044f22;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    h2{
+      color: white;
+      font-size: 2rem;
+      margin-bottom: 0px;
+      font-family: 'VLArialRoundedMTBold';
+    } 
+  }
+  .body{
+  
+
+  }
+  ul{
+    margin-top: 20px;
+    color: #044f22;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    li{
+      font-size: 18px;
+      color: #000;
+      margin-top: 10px;
+      font-family: 'helveticaLight';
+      b{
+        color: #044f22;
+        font-family: 'helveticaBold';
+      }
+      &::marker{
+        color: #044f22;
+      }
+    }
+  
+  }
 }
