@@ -119,7 +119,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>}
-				{touchDevice &&<Benefit/>}
+				
 				<div className={styles.separator}></div>
 				{touchDevice && <Products
 					onShowForm={(pos) => {
@@ -127,6 +127,7 @@ export default function Home() {
 						setVisisble(true);
 					}}
 				/>}
+				{touchDevice &&<Benefit/>}
 				{touchDevice && <Promotion />}
 				{touchDevice &&<Promotion7Days callback={(bool) => setVisisble(bool)} />}
 				<Modal

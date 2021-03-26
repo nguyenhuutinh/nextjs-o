@@ -112,13 +112,14 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<Benefit/>
+				
 				<Products
 					onShowForm={(pos) => {
 						setPos(pos);
 						setVisisble(true);
 					}}
 				/>
+				<Benefit/>
 				<Promotion />
 				<Promotion7Days callback={(bool) => setVisisble(bool)} />
 				<Modal
