@@ -76,22 +76,22 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				{touchDevice && <Feature /> }
-				{touchDevice && <LazyLoadImage
+				{ <Feature /> }
+				{<LazyLoadImage
 					effect="blur"
 					className={styles.banner2}
 					src="../images/banner2.jpg"
 					placeholderSrc={'../images/banner2-pre.jpg'}
 				/>}
-				{touchDevice && <Review />}
-				{touchDevice && <Quiz
+				{<Review />}
+				{<Quiz
 					setPos={(pos) => setPos(pos)}
 					showForm={() => {
 						setVisisble(true);
 					}}
 					pos={pos}
 				/>}
-				{touchDevice && <div className={styles.introvideo2} >
+				{<div className={styles.introvideo2} >
 					
 					<div className={styles.videopart}>
 						<div className={styles.left}>
@@ -121,15 +121,15 @@ export default function Home() {
 				</div>}
 				
 				<div className={styles.separator}></div>
-				{touchDevice && <Products
+				{<Products
 					onShowForm={(pos) => {
 						setPos(pos);
 						setVisisble(true);
 					}}
 				/>}
-				{touchDevice &&<Benefit/>}
-				{touchDevice && <Promotion />}
-				{touchDevice &&<Promotion7Days callback={(bool) => setVisisble(bool)} />}
+				{<Benefit/>}
+				{<Promotion />}
+				{<Promotion7Days callback={(bool) => setVisisble(bool)} />}
 				<Modal
 					closable={false}
 					
