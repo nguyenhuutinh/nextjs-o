@@ -17,6 +17,7 @@ import Benefit from '../containers/benefit';
 
 export default function Home() {
 	const [ visible, setVisisble ] = useState(false);
+	const [ ready, setReady ] = useState(false);
 	const [ pos, setPos ] = useState(2);
 	var videoheight = typeof window !== 'undefined' ? `${window.innerHeight/5*2}px` : '300px'
 	const [touchDevice, setTouchDevice] = useState(false);
@@ -24,12 +25,16 @@ export default function Home() {
 	const onTouchStart = ()=>{
 		setTouchDevice(true)
 	}
-
+	const completedLoad = ()=>{
+		console.log("ready")
+		setReady(true)
+	}
 	const openMessenger = ()=>{
 		typeof window !== 'undefined'  && (window.location.href="https://m.me/greenosinhtorausach?ref=landing_page_giam_can")
 	}
 	return (
-		<div className={styles.container} onTouchStart={onTouchStart}>
+		<div>
+		<div className={styles.container} onTouchStart={onTouchStart} style={{display: ready ? 'visible' :'visible'}}>
 			<Head>
 				<title>Green O - Sinh Tố Rau Sạch</title>
 				<link rel="icon" href="/favicon.ico" />
@@ -43,6 +48,7 @@ export default function Home() {
 			<main className={styles.main}>
 				
 				<LazyLoadImage
+					afterLoad={()=>completedLoad()}
 					effect="blur"
 					className={styles.banner1}
 					src="../images/banner1.jpg"
@@ -180,6 +186,8 @@ export default function Home() {
 				<div className={styles.trademak}>Copyright © 2021 Green O - Sinh Tố Rau Sạch.<br/>All Rights Reserved.</div>
 			</footer>
 			
+		</div>
+		<div className={styles.loading} style={{display: ready ? 'none' :'visible'}}><div className={styles.ldsRipple}><div></div><div></div></div></div>
 		</div>
 	);
 }
