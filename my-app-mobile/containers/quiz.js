@@ -39,7 +39,8 @@ const Quiz = ({ showForm, setPos, pos }) => {
 		xhr.onreadystatechange = function() {
 			//Call a function when the state changes.
 			if (xhr.readyState == 4 && xhr.status == 200) {
-				router.push(`/thank-you?phone=${phone}&name=${name}&question=${question}`);
+				// router.push(`/thank-you?phone=${phone}&name=${name}&question=${question}`);
+				typeof window !== 'undefined'  && (window.location.href=`https://m.me/greenosinhtorausach?ref=landing_page_${phone}_${name}`)
 			}
 			console.log(xhr.readyState, xhr.status);
 			if (xhr.status != 0) {

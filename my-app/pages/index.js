@@ -20,6 +20,10 @@ export default function Home() {
 	const [ pos, setPos ] = useState(2);
 	var videoheight = typeof window !== 'undefined' ? `${window.innerHeight/2}px` : '500px'
 	
+
+	const openMessenger = ()=>{
+		typeof window !== 'undefined'  && (window.location.href="https://m.me/greenosinhtorausach?ref=landing_page_giam_can")
+	}
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -37,7 +41,7 @@ export default function Home() {
 				/>
 				<div className={styles.introvideo} >
 					<div className={styles.buttonpart}>
-						<a onClick={() => setVisisble(true)}>
+						<a onClick={() => openMessenger()}>
 							<LazyLoadImage effect="blur" className={styles.button} src="../images/button-1.png" />
 						</a>
 					</div>
@@ -79,7 +83,7 @@ export default function Home() {
 				<Quiz
 					setPos={(pos) => setPos(pos)}
 					showForm={() => {
-						setVisisble(true);
+						openMessenger()
 					}}
 					pos={pos}
 				/>
@@ -116,12 +120,12 @@ export default function Home() {
 				<Products
 					onShowForm={(pos) => {
 						setPos(pos);
-						setVisisble(true);
+						openMessenger()
 					}}
 				/>
 				<Benefit/>
 				<Promotion />
-				<Promotion7Days callback={(bool) => setVisisble(bool)} />
+				<Promotion7Days callback={(bool) => openMessenger()} />
 				<Modal
 					centered
 					visible={visible}
