@@ -13,7 +13,9 @@ const Quiz = ({ showForm, setPos, pos }) => {
 	const [ offsetHeight, setOffsetHeight ] = useState();
 	const router = useRouter();
 	const [ submiting, setSubmitting ] = useState(false);
-	
+	const openMessenger = ()=>{
+		typeof window !== 'undefined'  && (window.location.href="https://m.me/greenosinhtorausach?ref=landing_page_giam_can")
+	}
 	useEffect(() => {
 		rightRef.current ? setOffsetHeight(rightRef.current.offsetHeight) : '';
 		return () => {
@@ -90,7 +92,7 @@ const Quiz = ({ showForm, setPos, pos }) => {
 						<div
 							className={`${classes.quiz_button + ' ' + (option == 0 ? classes.quiz_active : '')}`}
 							onClick={() => {
-								setOption(0), setPos(0);setStep(2)
+								openMessenger()
 							}}
 						>
 							A. Giảm 1-2kg siết 2-3cm
@@ -98,7 +100,7 @@ const Quiz = ({ showForm, setPos, pos }) => {
 						<div
 							className={`${classes.quiz_button + ' ' + (option == 1 ? classes.quiz_active : '')}`}
 							onClick={() => {
-								setOption(1), setPos(1);setStep(2)
+								openMessenger()
 							}}
 						>
 							B. Giảm 2-3kg siết 5-7 cm
@@ -106,7 +108,7 @@ const Quiz = ({ showForm, setPos, pos }) => {
 						<div
 							className={`${classes.quiz_button + ' ' + (option == 2 ? classes.quiz_active : '')}`}
 							onClick={() => {
-								setOption(2), setPos(2);setStep(2)
+								openMessenger()
 							}}
 						>
 							C. Giảm 3-5kg siết 5-10cm
@@ -114,14 +116,14 @@ const Quiz = ({ showForm, setPos, pos }) => {
 						<div
 							className={`${classes.quiz_button + ' ' + (option == 3 ? classes.quiz_active : '')}`}
 							onClick={() => {
-								setOption(3), setPos(3);setStep(2)
+								openMessenger()
 							}}
 						>
 							D. Tăng sức đề kháng - đẹp da{' '}
 						</div>
 					</div>
 
-					<div className={classes.bottom} onClick={() => setStep(2)}>
+					<div className={classes.bottom} onClick={() => openMessenger()}>
 						Đăng Ký Tư Vấn Miễn Phí <br /> Tại Đây
 					</div>
 				</div>
