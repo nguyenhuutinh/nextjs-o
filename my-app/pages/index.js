@@ -22,7 +22,7 @@ export default function Home() {
 	
 
 	const openMessenger = ()=>{
-		typeof window !== 'undefined'  && (window.location.href="https://m.me/greenosinhtorausach?ref=landing_page_giam_can")
+		typeof window !== 'undefined'  && (window.location.href="https://m.me/greenosinhtorausach?ref=LP")
 	}
 	return (
 		<div className={styles.container}>

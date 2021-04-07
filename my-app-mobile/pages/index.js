@@ -30,7 +30,7 @@ export default function Home() {
 		setReady(true)
 	}
 	const openMessenger = ()=>{
-		typeof window !== 'undefined'  && (window.location.href="https://m.me/greenosinhtorausach?ref=landing_page_giam_can")
+		typeof window !== 'undefined'  && (window.location.href="https://m.me/greenosinhtorausach?ref=LP")
 	}
 	return (
 		<div>

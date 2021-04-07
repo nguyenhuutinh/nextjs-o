@@ -40,7 +40,7 @@ const Quiz = ({ showForm, setPos, pos }) => {
 			//Call a function when the state changes.
 			if (xhr.readyState == 4 && xhr.status == 200) {
 				// router.push(`/thank-you?phone=${phone}&name=${name}&question=${question}`);
-				typeof window !== 'undefined'  && (window.location.href=`https://m.me/greenosinhtorausach?ref=landing_page_${phone}_${name}`)
+				typeof window !== 'undefined'  && (window.location.href=`https://m.me/greenosinhtorausach?ref=LP`)
 			}
 			console.log(xhr.readyState, xhr.status);
 			if (xhr.status != 0) {
