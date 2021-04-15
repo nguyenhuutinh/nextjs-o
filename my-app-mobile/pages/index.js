@@ -164,7 +164,7 @@ export default function Home() {
 
 				
 			</main>
-			<a href="tel:1900636791" className={styles.hotline}> <img src="../images/hotline.png" className={styles.hotline_img }effect={'blur'} /></a>
+			<a href="#" onClick={()=>openMessenger()} className={styles.hotline}> <img src="../images/messenger.png" className={styles.hotline_img }effect={'blur'} /></a>
 			<footer className={styles.footer}>
 				<LazyLoadImage src="../images/greeno-logo.png" className={styles.footer_logo} effect={'blur'} />
 				<div className={styles.footer_content}>
