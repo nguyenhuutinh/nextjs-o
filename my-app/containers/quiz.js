@@ -89,7 +89,7 @@ const Quiz = ({ showForm, setPos, pos }) => {
 						<div
 							className={`${classes.quiz_button + ' ' + (option == 0 ? classes.quiz_active : '')}`}
 							onClick={() => {
-								openMessenger()
+								showForm()
 							}}
 						>
 							A. Giảm 1-2kg siết 2-3cm
@@ -97,7 +97,7 @@ const Quiz = ({ showForm, setPos, pos }) => {
 						<div
 							className={`${classes.quiz_button + ' ' + (option == 1 ? classes.quiz_active : '')}`}
 							onClick={() => {
-								openMessenger()
+								showForm()
 							}}
 						>
 							B. Giảm 2-3kg siết 5-7 cm
@@ -105,7 +105,7 @@ const Quiz = ({ showForm, setPos, pos }) => {
 						<div
 							className={`${classes.quiz_button + ' ' + (option == 2 ? classes.quiz_active : '')}`}
 							onClick={() => {
-								openMessenger()
+								showForm()
 							}}
 						>
 							C. Giảm 3-5kg siết 5-10cm
@@ -113,14 +113,14 @@ const Quiz = ({ showForm, setPos, pos }) => {
 						<div
 							className={`${classes.quiz_button + ' ' + (option == 3 ? classes.quiz_active : '')}`}
 							onClick={() => {
-								openMessenger()
+								showForm()
 							}}
 						>
 							D. Tăng sức đề kháng - đẹp da{' '}
 						</div>
 					</div>
 
-					<div className={classes.bottom} onClick={() => openMessenger()}>
+					<div className={classes.bottom} onClick={() => showForm()}>
 						Đăng Ký Tư Vấn Miễn Phí <br /> Tại Đây
 					</div>
 				</div>
