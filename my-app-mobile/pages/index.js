@@ -177,8 +177,7 @@ export default function Home() {
 					<br />
 					Cửa hàng chính: 416A1 Hai Bà Trưng, Phường Tân Định, Quận 1, TP. Hồ Chí Minh<br />
 					<br />
-					Chi Nhánh Hà Nội: Toà nhà Việt Đức Complex, 39 Lê Văn Lương, Phường Nhân Chính, Quận Thanh Xuân,
-					Thành Phố Hà Nội<br />	<br />	<br />
+					Chi Nhánh Hà Nội: 25B, Ngõ 1 Lê Văn Thiêm, Phường Nhân Chính, Quận Thanh Xuân, TP. Hà Nội<br />	<br />	<br />
 					Hotline: 1900 63 67 91 - 090909 60 60 - 090944 80 60<br />
 					Email: vietnam@thousandhands.com<br />
 				</div>
